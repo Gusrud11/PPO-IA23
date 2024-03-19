@@ -1,65 +1,118 @@
 [
     {
         "nome":"Adriana Botelho Barcellos ",
-        "email":"adriana.barcellos@ifc.edu.br"  
+        "email":["adriana.barcellos@ifc.edu.br"],
+        "disciplina":[""],
+        "sala":""  
     }
     ,
     {
         "nome":"Adriano Martendal",
-        "email":"adriano.martendal@ifc.edu.br"  
+        "email":["adriano.martendal@ifc.edu.br"],
+        "disciplina":[""],
+        "sala":""   
     },
     {
         "nome":"Afonso da Luz Loss",
-        "email":"afonso.loss@ifc.edu.br"  
+        "email":["afonso.loss@ifc.edu.br"],
+        "disciplina":[""],
+        "sala":""   
     },
     {
         "nome":"agata Regiane Quissini ",
-        "email":"agata.quissini@ifc.edu.br"  
+        "email":["agata.quissini@ifc.edu.br"],
+        "disciplina":[""],
+        "sala":""   
     },
     {
         "nome":"Aldalucia Tereza da Rosa ",
-        "email":"aldalucia.rosa@ifc.edu.br"  
+        "email":["aldalucia.rosa@ifc.edu.br"], 
+        "disciplina":[""],
+        "sala":""  
     },
     
     {
         "nome":"Alexandre de Aguiar Amaral",
-        "email":"alexandre.amaral@ifc.edu.br"  
+        "email":["alexandre.amaral@ifc.edu.br"],
+        "disciplina":[""],
+        "sala":""   
     },
     {
         "nome":"Alexandre Vanzuita",
-        "email":"alexandre.vanzuita@ifc.edu.br"  
+        "email":["alexandre.vanzuita@ifc.edu.br"],
+        "disciplina":[""],
+        "sala":""   
     },
     {
         "nome":"Allan Charles Mendes de Sousa",
-        "email":["allan.sousa@ifc.edu.br",""]  
+        "email":["allan.sousa@ifc.edu.br"],
+        "disciplina":[""],
+        "sala":""   
     },
     {
         "nome":"Aleff Russi",
-        "email":["aleff.russi@ifc.edu.br","" ]
+        "email":["aleff.russi@ifc.edu.br"],
+        "disciplina":[""],
+        "sala":""  
     },
     {
         "nome":"Amanda Moser Coelho da Fonseca Faro",
-        "email":["amanda.faro@ifc.edu.br",""] 
+        "email":["amanda.faro@ifc.edu.br"],
+        "disciplina":[""],
+        "sala":""  
     },
     {
         "nome":"Ana Cristina Franzoi",
-        "email":["ana.franzoi@ifc.edu.br",""]
+        "email":["ana.franzoi@ifc.edu.br"],
+        "disciplina":[""],
+        "sala":"" 
     },
     {
         "nome":"Ale",
-        "email":"alexandre.vanzuita@ifc.edu.br"  
+        "email":["alexandre.vanzuita@ifc.edu.br"],
+        "disciplina":[""],
+        "sala":""   
     },
     {
-        "nome":"Alexandre Vanzuita",
-        "email":"alexandre.vanzuita@ifc.edu.br"  
-    },
-    {
-        "nome":"Alexandre Vanzuita",
-        "email":"alexandre.vanzuita@ifc.edu.br"  
-    },
-    {
-        "nome":"Alexandre Vanzuita",
-        "email":"alexandre.vanzuita@ifc.edu.br"  
+        "nome":"Aldalucia Tereza da Rosa ",
+        "email":["aldalucia.rosa@ifc.edu.br"], 
+        "disciplina":[""],
+        "sala":""  
+    },{
+        "nome":"Aldalucia Tereza da Rosa ",
+        "email":["aldalucia.rosa@ifc.edu.br"], 
+        "disciplina":[""],
+        "sala":""  
+    },{
+        "nome":"Aldalucia Tereza da Rosa ",
+        "email":["aldalucia.rosa@ifc.edu.br"], 
+        "disciplina":[""],
+        "sala":""  
+    },{
+        "nome":"Aldalucia Tereza da Rosa ",
+        "email":["aldalucia.rosa@ifc.edu.br"], 
+        "disciplina":[""],
+        "sala":""  
+    },{
+        "nome":"Aldalucia Tereza da Rosa ",
+        "email":["aldalucia.rosa@ifc.edu.br"], 
+        "disciplina":[""],
+        "sala":""  
+    },{
+        "nome":"Aldalucia Tereza da Rosa ",
+        "email":["aldalucia.rosa@ifc.edu.br"], 
+        "disciplina":[""],
+        "sala":""  
+    },{
+        "nome":"Aldalucia Tereza da Rosa ",
+        "email":["aldalucia.rosa@ifc.edu.br"], 
+        "disciplina":[""],
+        "sala":""  
+    },{
+        "nome":"Aldalucia Tereza da Rosa ",
+        "email":["aldalucia.rosa@ifc.edu.br"], 
+        "disciplina":[""],
+        "sala":""  
     }
     
 
