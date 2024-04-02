@@ -60,7 +60,7 @@ h1{
     border: 3px solid red;
     border-radius: 15px; /* Ajuste este valor para controlar a curvatura da borda */
     padding: 30px;
-    width: 350px; /* Ajuste este valor conforme necessário */
+    width: 150px; /* Ajuste este valor conforme necessário */
     text-align: center;
 }
 
