@@ -3,25 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIDD</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Barra de Pesquisa com JSON</title>
+    <link rel="stylesheet" href="mainsss.css">
 </head>
 <body>
+<header>
+<div class="search-container">
+    <img src="ifc.png" alt="IFC Logo" width="200" height="66">
+    <h1>Sistema Integrado de Dados Docentes</h1>
+    <input type="text" id="searchInput" placeholder="Pesquisar...">
+    <button type="submit"><img src="lupa.png" width="16" height="16" alt="Pesquisar"></button>
+    <div>
+        <ul id="searchResults"></ul>
 
-    <header>
-        <img src="ifc.png" alt="IFC Logo" width="200" height="66">
-        <!-- Adicione aqui o conteúdo do cabeçalho -->
-        <h1>Sistema Integrado de Dados Docentes</h1>
-        <div class="search-container">
-            <input type="text" placeholder="Pesquisar...">
-            <button type="submit"><img src="lupa.png" width="16" height="16" alt="Pesquisar"></button>
-    </header>
+    </div>    
+</div>
+</header>
+<div>
+</div>
+<div class="teacher-box">
+    <img src="caminho/para/sua/imagem-de-perfil.jpg" alt="Imagem de Perfil">
+    
+</div>
 
-    <div class="teacher-box">
-        <img src="caminho/para/sua/imagem-de-perfil.jpg" alt="Imagem de Perfil">
-        <h2>Nome do Professor</h2>
-        <p>Matéria que Ensina</p>
-    </div>
-
+<script src="main.js"></script>
 </body>
 </html>
