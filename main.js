@@ -1,73 +1,26 @@
-const searchInput = document.getElementById('searchInput');
-const searchResults = document.getElementById('searchResults');
-
-function showResults(results) {
-    searchResults.innerHTML = '';
-    results.forEach(result => {
-        const li = document.createElement('li');
-        li.textContent = result.nome;
-        searchResults.appendChild(li);
-    });
-    searchResults.style.display = results.length ? 'block' : 'none';
-}
-
-async function main() {
+void async function () {
+    const searchBar = document.querySelector(".search-bar")
+    const inputSearch = searchBar.querySelector("input")
+    const searchResults = document.querySelector(".search-results")
     const response = await fetch('dados.json')
     const items = await response.json()
 
-    searchInput.addEventListener('input', function () {
-        const searchText = this.value.toLowerCase().trim();
-        const filteredItems = items.filter(item => item.nome.toLowerCase().includes(searchText));
-        showResults(filteredItems);
-    });
+    const searchFn = value => {
+        const pessoasFiltradas = items.filter(pessoa => pessoa.nome.toLowerCase().includes(value.toLowerCase()))
+        searchResults.innerHTML = ""
+        pessoasFiltradas.forEach(pessoa => {
+            searchResults.innerHTML += `
+                <li>
+                    ${pessoa.nome} - 
+                    ${pessoa.email}
+                </li>
+            `
+        })
+    }
 
-    searchResults.addEventListener('click', function (event) {
-        if (event.target.tagName === 'LI') {
-            searchInput.value = event.target.textContent;
-            searchResults.style.display = 'none';
+    inputSearch.addEventListener("keydown", ev => {
+        if (ev.key == "Enter") {
+            searchFn(inputSearch.value)
         }
-    });
-}
-
-main()
-
-
-
-
-
-
-// // Carregar os dados do arquivo JSON
-// fetch('dados.json')
-//     .then(response => response.json())
-//     .then(data => {
-//         const items = data;
-
-//         searchInput.addEventListener('input', function () {
-//             const searchText = this.value.toLowerCase();
-//             const filteredItems = items.filter(item => item.nome.toLowerCase().includes(searchText));
-//             showResults(filteredItems);
-//         });
-
-//         function showResults(results) {
-//             searchResults.innerHTML = '';
-//             results.forEach(result => {
-//                 const li = document.createElement('li');
-//                 li.textContent = result.nome;
-//                 searchResults.appendChild(li);
-//             });
-//             searchResults.style.display = results.length ? 'block' : 'none';
-//         }
-
-//         searchResults.addEventListener('click', function (event) {
-//             if (event.target.tagName === 'LI') {
-//                 searchInput.value = event.target.textContent;
-//                 searchResults.style.display = 'none';
-//             }
-//         });
-
-//         if (searchResults === '') {
-//             searchResults.style.display = 'none';
-//         }
-//     })
-
-//     .catch(error => console.error('Erro ao carregar os dados:', error));
+    })
+}();

@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barra de Pesquisa com JSON</title>
-    <link rel="stylesheet" href="mainsss.css">
+    <link rel="stylesheet" href="main.css">
+    <script defer async src="main.js"></script>
+
 </head>
+
 <body>
-<header>
-    <img src="ifc.png" alt="IFC Logo" width="200" height="66">
-    <h1>Sistema Integrado de Dados Docentes</h1>
-</header>
+    <header>
+        <img src="ifc.png" alt="IFC Logo" width="200" height="66">
+    </header>
 
-<div class="search-container">
-    <input type="text" id="searchInput" placeholder="Pesquisar...">
-    <button type="submit"><img src="lupa.png" width="16" height="16" alt="Pesquisar"></button>
-    <div>
-        <ul id="searchResults"></ul>
+    <main>
+        <h1>Sistema Integrado de Dados Docentes</h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Pesquisar...">
+            <button type="submit"><img src="lupa.png" width="16" height="16" alt="Pesquisar"></button>
+        </div>
+        <div>
+            <ul class="search-results"></ul>
+        </div>
+    </main>
 
-    </div>    
-</div>
-<div>
-</div>
-<div class="teacher-box">
-    <img src="caminho/para/sua/imagem-de-perfil.jpg" alt="Imagem de Perfil">
-    
-</div>
-
-<script src="main.js"></script>
 </body>
+
 </html>
