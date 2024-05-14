@@ -4,28 +4,14 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .profile-box {
-    width: 200px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    margin: 10px;
-  }
-  
-  .profile-box img {
-    width: 100px;
-    height: 100px;
-  }
-  
-  .profile-box h2 {
-    margin: 0;
-    font-size: 18px;
-    color: #333;
-  }
-  
-  .container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr;
-    background-color: rgb(100, 200, 150);
-  }
+  margin: 0;
+  display:grid;
+  transform: scale(0.75);
+}
+.profile-box > img {
+  margin: 0;
+  /* transform: scale(0.75); */
+  width: 46px;
+  height: 44px;
+}

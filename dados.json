@@ -1,6 +1,6 @@
 [
     {
-        "nome":"ADRIANO MARTENDAL",
+        "nome":"ADRIANO MARTENDAL", 
         "email":["adriano.martendal@ifc.edu.br"],
         "turmas":["CA23","CA24","THA22","THB22","THA23","THB23"],
         "cursos_tecnicos":["CONTROLE AMBIENTAL","HOSPEDAGEM"]  
@@ -456,8 +456,4 @@
         "cursos_tecnicos":["AGROPECUÁRIA"] 
     }
     
-
-
-
-
 ]
