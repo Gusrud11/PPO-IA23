@@ -6,4 +6,12 @@ main{
     height: 80vh;
     border: 2px solid;
 }
+.back{
+    border-radius: 0.5em;
+    transform: scale(1.4);
+    position:absolute  ;
+    top: 1em;
+    right: 5em;
 
+
+}

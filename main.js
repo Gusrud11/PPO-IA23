@@ -13,11 +13,12 @@ void async function () {
                 <li>
                     ${pessoa.nome} - 
                     ${pessoa.email}
+                    
                 </li>
             `
         })
     }
-
+    
     inputSearch.addEventListener("keydown", ev => {
         if (ev.key == "Enter") {
             searchFn(inputSearch.value)
