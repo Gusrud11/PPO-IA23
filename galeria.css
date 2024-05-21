@@ -15,3 +15,17 @@ body {
   width: 46px;
   height: 44px;
 }
+batata {
+  position: absolute;
+  top: 30px;
+  left: 800px;
+  transform:scale(2);
+}
+arroz {
+  border: 2px solid black;
+  border-radius: 5px;
+  position: absolute;
+  top: 200px;
+  right: 50px;
+  transform:scale(1.25);
+}

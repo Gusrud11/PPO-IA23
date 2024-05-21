@@ -11,8 +11,8 @@ document.getElementById('searchForm').addEventListener('submit', function(event)
 
             if (professor) {
                 resultDiv.innerHTML = `
-                    <p><strong>Nome:</strong> ${professor.nome}</p>
-                    <p><strong>Email:</strong> ${professor.email.join(", ")}</p>
+                    <batata><strong>Nome:</strong> ${professor.nome}</batata>
+                    <arroz><strong>Email:</strong> ${professor.email.join(", ")}</arroz>
                     <p><strong>Turmas:</strong> ${professor.turmas.join(", ")}</p>
                     <p><strong>Cursos Técnicos:</strong> ${professor.cursos_tecnicos.join(", ")}</p>
                 `;
