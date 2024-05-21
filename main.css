@@ -9,9 +9,28 @@ main{
 .back{
     border-radius: 0.5em;
     transform: scale(1.4);
-    position:absolute  ;
+    position:relative  ;
     top: 1em;
     right: 5em;
+    margin-top: 100px;/* cria uma margem que distancia do elemento acima  */
 
+    background-color: #afb9af; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    cursor: pointer;
+ 
+}
+
+.forward{
+    border-radius: 0.5em;
+    transform: scale(1.4);
+    position:relative  ;
+    top: 1em;
+    right: 5em;
+    margin-right: 300px; /* aumenta a margem pra direita  */ 
+    margin-top: 100px; /* cria uma margem que distancia do elemento acima  */
+    background-color: #afb9af; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  cursor: pointer;
 
 }
+
