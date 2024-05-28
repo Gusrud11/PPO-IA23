@@ -61,413 +61,494 @@
         "nome":"CLAUDIA OLIVEIRA ROSA",
         "email":["claudia.rosa@ifc.edu.br"],
         "turmas":["AA22","AB22","AD22"],
-        "cursos_tecnicos":["AGROPECUÁRIA"]  
+        "cursos_tecnicos":["AGROPECUÁRIA"],
+        "id":"8"  
     },
     
     {
         "nome":"ANA CRISTINA FRANZOI",
         "email":["ana.franzoi@ifc.edu.br"],
         "turmas":["AA24","AB24","AC24","IA23","IA24","CA23"],
-        "cursos_tecnicos":["AGROPECUÁRIA","INFORMÁTICA","CONTROLE AMBIENTAL"] 
+        "cursos_tecnicos":["AGROPECUÁRIA","INFORMÁTICA","CONTROLE AMBIENTAL"] ,
+        "id":"9"
     },
     {
         "nome":"ANA LUCIA LODI RIBEIRO",
         "email":["ana.ribeiro@ifc.edu.br"],
         "turmas":["THA22","THB22","THA23","THA23","THA24","THAB24"],
-        "cursos_tecnicos":["HOSPEDAGEM"]   
+        "cursos_tecnicos":["HOSPEDAGEM"],
+        "id":"10"   
     },
     {
         "nome":"ANA PAULA RESENDE MALHEIRO AMARAL",
         "email":["ana.amaral@ifc.edu.br"], 
         "turmas":["IA22","THA22","THB22"],
-        "cursos_tecnicos":["INFORMÁTICA","HOSPEDAGEM"]  
+        "cursos_tecnicos":["INFORMÁTICA","HOSPEDAGEM"],
+        "id":"11"  
     },{
         "nome":"ANDREA CRISTINA GOMES MONTEIRO",
         "email":["ana.monteiro@ifc.edu.br"], 
         "turmas":[""],
-        "cursos_tecnicos":["INFORMÁTICA","CONTROLE AMBIENTAL","HOSPEDAGEM","AGROPECUÁRIA"]  
+        "cursos_tecnicos":["INFORMÁTICA","CONTROLE AMBIENTAL","HOSPEDAGEM","AGROPECUÁRIA"],
+        "id":"12"  
     },{
         "nome":"ANDREIA REGINA BAZZO",
         "email":["andreia.bazzo@ifc.edu.br"], 
         "turmas":["THA22","THB22","AA23","AB23","AC23","AA24","AB24","AC24","IA23","IA24"],
-        "cursos_tecnicos":["HOSPEDAGEM","AGROPECUÁRIA","INFORMÁTICA"] 
+        "cursos_tecnicos":["HOSPEDAGEM","AGROPECUÁRIA","INFORMÁTICA"],
+        "id":"13" 
     },{
         "nome":"ANGELO AUGUSTO FROZZA",
         "email":["angelo.frozza@ifc.edu.br"], 
         "turmas":["IA22"],
-        "cursos_tecnicos":["INFORMÁTICA"]  
+        "cursos_tecnicos":["INFORMÁTICA"],
+        "id":"14"  
     },{
         "nome":"ANIELE LEMOS",
         "email":["aniele.lemos@ifc.edu.br"], 
         "turmas":["IA22","IA23","IA24","CA22","CA23","CA24","AC23"],
-        "cursos_tecnicos":["INFORMÁTICA","CONTROLE AMBIENTAL","AGROPECUÁRIA"] 
+        "cursos_tecnicos":["INFORMÁTICA","CONTROLE AMBIENTAL","AGROPECUÁRIA"],
+        "id":"15" 
     },{
         "nome":"ANTONIO JOSE FARIAS NOBREGA",
         "email":["antonio.nobrega@ifc.edu.br"], 
         "turmas":["IA23","IA24","CA23","CA24","THB23"],
-        "cursos_tecnicos":["INFORMÁTICA","CONTROLE AMBIENTAL","HOSPEDAGEM"]  
+        "cursos_tecnicos":["INFORMÁTICA","CONTROLE AMBIENTAL","HOSPEDAGEM"],
+        "id":"16"  
     },{
         "nome":"ANTONIO JOSE PEREIRA",
         "email":["antonio.pereira@ifc.edu.br"], 
         "turmas":["AA23","AB23","AC23","AC24"],
-        "cursos_tecnicos":["AGROPECUÁRIA"]  
+        "cursos_tecnicos":["AGROPECUÁRIA"],
+        "id":"17"  
     },{
         "nome":"ARACELI GONCALVES",
         "email":["araceli.gonçalves@ifc.edu.br"], 
         "turmas":["CA22"],
-        "cursos_tecnicos":["CONTROLE AMBIENTAL"] 
+        "cursos_tecnicos":["CONTROLE AMBIENTAL"],
+        "id":"18" 
     },{
         "nome":"CARLA MACHADO DE SA STEIN",
         "email":["carla.stein@ifc.edu.br"], 
         "turmas":["AA22","AB22","AD22","THA22","THA23","THB23","THA24","THB24","CA22","IA23"],
-        "cursos_tecnicos":["AGROPECUÁRIA","CONTROLE AMBIENTAL","INFORMÁTICA","HOSPEDAGEM"] 
+        "cursos_tecnicos":["AGROPECUÁRIA","CONTROLE AMBIENTAL","INFORMÁTICA","HOSPEDAGEM"],
+        "id":"19" 
     },{
         "nome":"GABRIELA BLANCO",
         "email":["gabriela.blanco@ifc.edu.br"], 
         "turmas":["AB22"],
-        "cursos_tecnicos":["AGROPECUÁRIA"] 
+        "cursos_tecnicos":["AGROPECUÁRIA"],
+        "id":"20"
     },{
         "nome":"CRISTALINA YOSHIE YOSHIMURA",
         "email":["cristalina.yoshimura@ifc.edu.br"], 
         "turmas":["AA22","AB22","AD22","IA22","CA23","CA24"],
-        "cursos_tecnicos":["AGROPECUÁRIA","INFORMÁTICA","CONTROLE AMBIENTAL"] 
+        "cursos_tecnicos":["AGROPECUÁRIA","INFORMÁTICA","CONTROLE AMBIENTAL"], 
+        "id":"21"
     },{
         "nome":"CRISTIANE REGINA MICHELON",
         "email":["cristiane.michelon@ifc.edu.br"], 
         "turmas":["IA24","AA24","AB24","AC24","CA24","THA24","THB24"],
-        "cursos_tecnicos":["INFORMÁTICA","AGROPECUÁRIA","HOSPEDAGEM","CONTROLE AMBIENTAL"] 
+        "cursos_tecnicos":["INFORMÁTICA","AGROPECUÁRIA","HOSPEDAGEM","CONTROLE AMBIENTAL"],
+        "id":"22" 
     },{
         "nome":"DAIANE HELOISA NUNES",
         "email":["daiane.nunes@ifc.edu.br"], 
         "turmas":["AA24","AB24","AC24"],
-        "cursos_tecnicos":["AGROPECUÁRIA"] 
+        "cursos_tecnicos":["AGROPECUÁRIA"] ,
+        "id":"23"
     },{
         "nome":"DANIEL DE ANDRADE VARELA",
         "email":["daniel.varela@ifc.edu.br"], 
         "turmas":["IA22","IA23","IA24"],
-        "cursos_tecnicos":["INFORMÁTICA"] 
+        "cursos_tecnicos":["INFORMÁTICA"],
+        "id":"24" 
     },{
         "nome":"ELISETE DA SILVA",
         "email":["elisete.silva@ifc.edu.br"], 
         "turmas":["IA23","THA22","THB22","THA23","THB23"],
-        "cursos_tecnicos":["INFORMÁTICA","HOSPEDAGEM"] 
+        "cursos_tecnicos":["INFORMÁTICA","HOSPEDAGEM"],
+        "id":"25" 
     },{
         "nome":"DANIEL SCHLEMPER",
         "email":["daniel.schlemper@ifc.edu.br"], 
         "turmas":["IA23","IA24"],
-        "cursos_tecnicos":["INFORMÁTICA"] 
+        "cursos_tecnicos":["INFORMÁTICA"],
+        "id":"26" 
     },{
         "nome":"DANIEL SHIKANAI KERR",
         "email":["daniel.kerr@ifc.edu.br"], 
         "turmas":["AA22","AD22","CA24"],
-        "cursos_tecnicos":["AGROPECUÁRIA","CONTROLE AMBIENTAL"] 
+        "cursos_tecnicos":["AGROPECUÁRIA","CONTROLE AMBIENTAL"],
+        "id":"27" 
     },{
         "nome":"DANIELE SOARES DE LIMA",
         "email":["daniele.lima@ifc.edu.br"], 
         "turmas":["AA23","AB23","AC23"],
-        "cursos_tecnicos":["AGROPECUÁRIA"] 
+        "cursos_tecnicos":["AGROPECUÁRIA"],
+        "id":"28" 
     },{
         "nome":"FABIO BRICKS",
         "email":["fabio.bricks@ifc.edu.br"], 
         "turmas":["AA24","AB24","AC24","AA22","AB22","AD22","THA22","THB22","THA23","THB23","THA24"],
-        "cursos_tecnicos":[""] 
+        "cursos_tecnicos":[""] ,
+        "id":"29"
     },{
         "nome":"DANILO JOSE FERREIRA",
         "email":["danilo.ferreira@ifc.edu.br"], 
         "turmas":["AA22","AA23","AB23","AC23"],
-        "cursos_tecnicos":["AGROPECUÁRIA"] 
+        "cursos_tecnicos":["AGROPECUÁRIA"],
+        "id":"30" 
     },{
         "nome":"DAVID BRUNO DE SOUSA TEIXEIRA",
         "email":["david.teixeira@ifc.edu.br"], 
         "turmas":["AA22","AB22","AD22","AB24","AC24"],
-        "cursos_tecnicos":["AGROPECUÁRIA"] 
+        "cursos_tecnicos":["AGROPECUÁRIA"],
+        "id":"31" 
     },{
         "nome":"DEBORA DE FATIMA EINHARDT JARA",
         "email":["debora.jara@ifc.edu.br"], 
         "turmas":["CA22","CA23","CA24","THA23","THB23"],
-        "cursos_tecnicos":["CONTROLE AMBIENTAL","HOSPEDAGEM"] 
+        "cursos_tecnicos":["CONTROLE AMBIENTAL","HOSPEDAGEM"],
+        "id":"32"
     },{
         "nome":"DIEGO DAS NEVES DE SOUZA",
         "email":["diego.souza@ifc.edu.br"], 
         "turmas":["AA23","AB23","AC23"],
-        "cursos_tecnicos":["AGROPECUÁRIA"] 
+        "cursos_tecnicos":["AGROPECUÁRIA"],
+        "id":"33" 
     },{
         "nome":"EDUARDO ABEL CORAL",
         "email":["eduardo.coral@ifc.edu.br"], 
         "turmas":["AA24","IA24"],
-        "cursos_tecnicos":["AGROPECUÁRIA","INFORMÁTICA"] 
+        "cursos_tecnicos":["AGROPECUÁRIA","INFORMÁTICA"],
+        "id":"34" 
     },{
         "nome":"ISADORA LUCIO",
         "email":["isadora.lucio@ifc.edu.br"], 
         "turmas":["THA23","THB23","THA24","THB24"],
-        "cursos_tecnicos":["HOSPEDAGEM"] 
+        "cursos_tecnicos":["HOSPEDAGEM"],
+        "id":"35" 
     },{
         "nome":"FABIO ALVES DOS SANTOS DIAS",
         "email":["fabio.dias@ifc.edu.br"], 
         "turmas":["AA22","AD22","AA24","AB24","AC24","IA22","IA23","CA22","CA23"],
-        "cursos_tecnicos":["AGROPECUÁRIA","CONTROLE AMBIENTAL","INFORMÁTICA"] 
+        "cursos_tecnicos":["AGROPECUÁRIA","CONTROLE AMBIENTAL","INFORMÁTICA"],
+        "id":"36" 
     },{
         "nome":"FÁBIO CASTANHEIRA",
         "email":["fabio.castanheira@ifc.edu.br"], 
         "turmas":["IA22","AA22","AB22","CA24"],
-        "cursos_tecnicos":["AGROPECUÁRIA","INFORMÁTICA","CONTROLE AMBIENTAL"] 
+        "cursos_tecnicos":["AGROPECUÁRIA","INFORMÁTICA","CONTROLE AMBIENTAL"],
+        "id":"37" 
     },{
         "nome":"FABRICIO DA SILVA BARBOZA",
         "email":["fabricio.barboza@ifc.edu.br"], 
         "turmas":["AA23","AB23","AC23"],
-        "cursos_tecnicos":["AGROPECUÁRIA"] 
+        "cursos_tecnicos":["AGROPECUÁRIA"] ,
+        "id":"38"
     },{
         "nome":"FERNANDA CARVALHO HUMANN",
         "email":["fernanda.humann@ifc.edu.br"], 
         "turmas":["CA23","CA24"],
-        "cursos_tecnicos":["CONTROLE AMBIENTAL"] 
+        "cursos_tecnicos":["CONTROLE AMBIENTAL"] ,
+        "id":"39"
     },{
         "nome":"FLAVIA WALTER",
         "email":["flavia.walter@ifc.edu.br"], 
         "turmas":["AA22","AB22","AD22","CA22","IA23","THB22"],
-        "cursos_tecnicos":["AGROPECUÁRIA","CONTROLE AMBIENTAL","INFORMÁTICA","HOSPEDAGEM"] 
+        "cursos_tecnicos":["AGROPECUÁRIA","CONTROLE AMBIENTAL","INFORMÁTICA","HOSPEDAGEM"],
+        "id":"40" 
     },{
         "nome":"FLAVIO LEITE COSTA",
         "email":["flavio.costa@ifc.edu.br"], 
         "turmas":["AA23","AB23","AC23","THA23","THB23","THB22","IA23","CA23"],
-        "cursos_tecnicos":["AGROPECUÁRIA","CONTROLE AMBIENTAL","HOSPEDAGEM","INFORMÁTICA"] 
+        "cursos_tecnicos":["AGROPECUÁRIA","CONTROLE AMBIENTAL","HOSPEDAGEM","INFORMÁTICA"],
+        "id":"41"  
     },{
         "nome":"GISELE APARECIDA VIVAN",
         "email":["gisele.vivan@ifc.edu.br"], 
         "turmas":["AA22","AB22","AD22"],
-        "cursos_tecnicos":["AGROPECUÁRIA"] 
+        "cursos_tecnicos":["AGROPECUÁRIA"],
+        "id":"42" 
     },{
         "nome":"IVAN CARLOS SERPA",
         "email":["ivan.serpa@ifc.edu.br"], 
         "turmas":["AA24","AB24","AC24","IA24","THA24","THB24"],
-        "cursos_tecnicos":["AGROPECUÁRIA","INFORMÁTICA","HOSPEDAGEM"] 
+        "cursos_tecnicos":["AGROPECUÁRIA","INFORMÁTICA","HOSPEDAGEM"],
+        "id":"43" 
     },{
         "nome":"JAIME SANDRO DALLAGO",
         "email":["jaime.dallago@ifc.edu.br"], 
         "turmas":["AA22","AB22","AD22","CA24"],
-        "cursos_tecnicos":["AGROPECUÁRIA","CONTROLE AMBIENTAL"] 
+        "cursos_tecnicos":["AGROPECUÁRIA","CONTROLE AMBIENTAL"],
+        "id":"44" 
     },{
         "nome":"JARDEL CAMINHA CARVALHO CESTARI",
         "email":["jardel.cestari@ifc.edu.br"], 
         "turmas":["AA22","AB22","AD22"],
-        "cursos_tecnicos":["AGROPECUÁRIA"] 
+        "cursos_tecnicos":["AGROPECUÁRIA"],
+        "id":"45" 
     },{
         "nome":"JERFFSON LUCAS SANTOS",
         "email":["jerffson.santos@ifc.edu.br"], 
         "turmas":["AA24","AB24"],
-        "cursos_tecnicos":["AGROPECUÁRIA"] 
+        "cursos_tecnicos":["AGROPECUÁRIA"] , 
+        "id":"46"
     },{
         "nome":"JOICE SELEME MOTA",
         "email":["joice.mota@ifc.edu.br"], 
         "turmas":["IA22"],
-        "cursos_tecnicos":["INFORMÁTICA"] 
+        "cursos_tecnicos":["INFORMÁTICA"] ,
+        "id":"47"
     },{
         "nome":"JOSE DANIEL CAZALE",
         "email":["jose.cazale@ifc.edu.br"], 
         "turmas":["AA22","AB22","AD22","AA24","AB24","AC24"],
-        "cursos_tecnicos":["AGROPECUÁRIA"] 
+        "cursos_tecnicos":["AGROPECUÁRIA"] ,
+        "id":"48"
     },{
         "nome":"JOSE LUIZ UNGERICHT JUNIOR",
         "email":["jose.ungericht@ifc.edu.br"], 
         "turmas":["IA24"],
-        "cursos_tecnicos":["INFORMÁTICA"] 
+        "cursos_tecnicos":["INFORMÁTICA"] ,
+        "id":"49"
     },{
         "nome":"KLEBER ERSCHING",
         "email":["kleber.ersching@ifc.edu.br"], 
         "turmas":["AB22","AA23","AB23","AC23","THA23","THB23","THB24"],
-        "cursos_tecnicos":["AGROPECUÁRIA","HOSPEDAGEM"] 
+        "cursos_tecnicos":["AGROPECUÁRIA","HOSPEDAGEM"],
+        "id":"50" 
     },{
         "nome":"LARISSA REGIS FERNANDES",
         "email":["larissa.fernandes@ifc.edu.br"], 
         "turmas":["THA22","THB22","THA23","THB23","THA24","THB24"],
-        "cursos_tecnicos":["HOSPEDAGEM"] 
+        "cursos_tecnicos":["HOSPEDAGEM"],
+        "id":"51" 
     },{
         "nome":"LEISI FERNANDA MOYA",
         "email":["leisi.moya@ifc.edu.br"], 
         "turmas":["THA22","THB22","THA23","THB23","THA24","THB24"],
-        "cursos_tecnicos":["HOSPEDAGEM"] 
+        "cursos_tecnicos":["HOSPEDAGEM"] ,
+        "id":"52"
     },{
         "nome":"LEONARDO TALAVERA CAMPOS",
         "email":["leonardo.campos@ifc.edu.br"], 
         "turmas":["THA22","THB22","THA23","THB23","CA24"],
-        "cursos_tecnicos":["HOSPEDAGEM","CONTROLE AMBIENTAL"] 
+        "cursos_tecnicos":["HOSPEDAGEM","CONTROLE AMBIENTAL"],
+        "id":"53" 
     },{
         "nome":"LETICIA  RABELO",
         "email":["leticia.rabelo@ifc.edu.br"], 
         "turmas":["CA22","CA23"],
-        "cursos_tecnicos":["CONTROLE AMBIENTAL"] 
+        "cursos_tecnicos":["CONTROLE AMBIENTAL"],
+        "id":"54" 
     },{
         "nome":"LETICIA FLOHR",
         "email":["leticia.flohr@ifc.edu.br"], 
         "turmas":["CA22","CA23","CA24"],
-        "cursos_tecnicos":["CONTROLE AMBIENTAL"] 
+        "cursos_tecnicos":["CONTROLE AMBIENTAL"] ,
+        "id":"55"
     },{
         "nome":"LETICIA LENZI",
         "email":["aldalucia.rosa@ifc.edu.br"], 
         "turmas":["THA24","THB24","CA24"],
-        "cursos_tecnicos":["HOSPEDAGEM","CONTROLE AMBIENTAL"] 
+        "cursos_tecnicos":["HOSPEDAGEM","CONTROLE AMBIENTAL"],
+        "id":"56" 
     },{
         "nome":"LIDIANE VISINTIN",
         "email":["lidiane.visintin@ifc.edu.br"], 
         "turmas":["IA23"],
-        "cursos_tecnicos":["IA23"] 
+        "cursos_tecnicos":["IA23"],
+        "id":"57" 
     },{
         "nome":"LISSANDRA MARIA FISCHER",
         "email":["lissandra.fischer@ifc.edu.br"], 
         "turmas":["IA22","IA23","IA24"],
-        "cursos_tecnicos":["INFORMÁTICA"] 
+        "cursos_tecnicos":["INFORMÁTICA"],
+        "id":"58" 
     },{
         "nome":"LIVIA DA SILVA PERENHA",
         "email":["livia.vetter@ifc.edu.br"], 
         "turmas":["AA24","AB24","AC24","CA22","CA23"],
-        "cursos_tecnicos":["AGROPECUÁRIA","CONTROLE AMBIENTAL"] 
+        "cursos_tecnicos":["AGROPECUÁRIA","CONTROLE AMBIENTAL"] ,
+        "id":"59"
     },{
         "nome":"LUCAS GABRIEL DE SOUZA",
         "email":["lucas.souza@ifc.edu.br"], 
         "turmas":["IA23","IA24","AD22","THA22","THB22"],
-        "cursos_tecnicos":["INFORMÁTICA","HOSPEDAGEM","AGROPECUÁRIA"] 
+        "cursos_tecnicos":["INFORMÁTICA","HOSPEDAGEM","AGROPECUÁRIA"],
+        "id":"60" 
     },{
         "nome":"LUCIANA COLUSSI",
         "email":["luciana.colussi@ifc.edu.br"], 
         "turmas":["AA23","CA24","IA24"],
-        "cursos_tecnicos":["AGROPECUÁRIA","INFORMÁTICA","CONTROLE AMBIENTAL"] 
+        "cursos_tecnicos":["AGROPECUÁRIA","INFORMÁTICA","CONTROLE AMBIENTAL"] ,
+        "id":"61"
     },
     {
         "nome":"LUIZ DEVEGILI",
         "email":["luiz.devegili@ifc.edu.br"], 
         "turmas":["THA22","THB22","THA23","THB23"],
-        "cursos_tecnicos":["HOSPEDAGEM"] 
+        "cursos_tecnicos":["HOSPEDAGEM"],
+        "id":"62" 
     },{
         "nome":"LUIZ ALVARO MONTEIRO JUNIOR",
         "email":["luiz.monteiro@ifc.edu.br"], 
         "turmas":["AA22","AB22","AD22","AA23","AB23","AC23"],
-        "cursos_tecnicos":["AGROPECUÁRIA"] 
+        "cursos_tecnicos":["AGROPECUÁRIA"],
+        "id":"63" 
     },{
         "nome":"MARCELO DA SILVA",
         "email":["marcelo.silva@ifc.edu.br"], 
         "turmas":["THA22","THB22","IA23","AA23","AB23","AC23"],
-        "cursos_tecnicos":["HOSPEDAGEM","AGROPECUÁRIA","INFORMÁTICA"] 
+        "cursos_tecnicos":["HOSPEDAGEM","AGROPECUÁRIA","INFORMÁTICA"],
+        "id":"64" 
     },{
         "nome":"MARIA APARECIDA DE SOUZA RAMOS",
         "email":["maria.ramos@ifc.edu.br"], 
         "turmas":["THA23","THB23","IA23","AA24","AB24","AC24"],
-        "cursos_tecnicos":["HOSPEDAGEM","AGROPECUÁRIA","INFORMÁTICA"] 
+        "cursos_tecnicos":["HOSPEDAGEM","AGROPECUÁRIA","INFORMÁTICA"] ,
+        "id":"65"
     },{
         "nome":"MARIANA FERNANDES RIBAS",
         "email":["mariana.ribas@ifc.edu.br"], 
         "turmas":["AA22","AB22","AD22"],
-        "cursos_tecnicos":["AGROPECUÁRIA"] 
+        "cursos_tecnicos":["AGROPECUÁRIA"],
+        "id":"66" 
     },{
         "nome":"MARINA TETE VIEIRA",
         "email":["marina.vieira@ifc.edu.br"], 
         "turmas":["THA22","THB22","THA23","THB23","THA24","THB24"],
-        "cursos_tecnicos":["HOSPEDAGEM"] 
+        "cursos_tecnicos":["HOSPEDAGEM"],
+        "id":"67" 
     },{
         "nome":"MARLI FATIMA VICK VIEIRA",
         "email":["marli.vieira@ifc.edu.br"], 
         "turmas":["CA23","CA24","IA23","IA24","AC23","AB23","THA23","THB23","THB24"],
-        "cursos_tecnicos":["CONTROLE AMBIENTAL","INFORMÁTICA","HOSPEDAGEM","AGROPECUÁRIA"] 
+        "cursos_tecnicos":["CONTROLE AMBIENTAL","INFORMÁTICA","HOSPEDAGEM","AGROPECUÁRIA"] ,
+        "id":"68" 
     },{
         "nome":"MAURICIO GUSTAVO RODRIGUES",
         "email":["mauricio.rodrigues@ifc.edu.br"], 
         "turmas":["CA23","THA23","THB23","THA24","THB24"],
-        "cursos_tecnicos":["CONTROLE AMBIENTAL","HOSPEDAGEM"] 
+        "cursos_tecnicos":["CONTROLE AMBIENTAL","HOSPEDAGEM"],
+        "id":"69" 
     },{
         "nome":"MIRELA BERNIERI",
         "email":["mirela.bernieri@ifc.edu.br"], 
         "turmas":["CA23","THB23"],
-        "cursos_tecnicos":["CONTROLE AMBIENTAL","HOSPEDAGEM"] 
+        "cursos_tecnicos":["CONTROLE AMBIENTAL","HOSPEDAGEM"] ,
+        "id":"70"
     },{
         "nome":"RENATA OGUSUCU",
         "email":["renata.ogusucu@ifc.edu.br"], 
         "turmas":["CA22","CA23","CA24","IA23","THA22","THB22"],
-        "cursos_tecnicos":["CONTROLE AMBIENTAL","INFORMÁTICA","HOSPEDAGEM"] 
+        "cursos_tecnicos":["CONTROLE AMBIENTAL","INFORMÁTICA","HOSPEDAGEM"] ,
+        "id":"71"
     },{
         "nome":"ROBERTA RAQUEL",
         "email":["roberta.raquel@ifc.edu.br"], 
         "turmas":["AA22","AB22","AD22","THA23","THB23","IA22","CA23"],
-        "cursos_tecnicos":["AGROPECUÁRIA","HOSPEDAGEM","INFORMÁTICA","CONTROLE AMBIENTAL"] 
+        "cursos_tecnicos":["AGROPECUÁRIA","HOSPEDAGEM","INFORMÁTICA","CONTROLE AMBIENTAL"] ,
+        "id":"72"
     },{
         "nome":"ROBSON RODRIGUES CARVALHO",
         "email":["robson.carvalho@ifc.edu.br"], 
         "turmas":["CA23","CA24","AA23","AB23","AC23","IA24"],
-        "cursos_tecnicos":["CONTROLE AMBIENTAL","AGROPECUÁRIA","INFORMÁTICA"] 
+        "cursos_tecnicos":["CONTROLE AMBIENTAL","AGROPECUÁRIA","INFORMÁTICA"],
+        "id":"73" 
     },{
         "nome":"RODOLFO AUGUSTO BRAVO DE CONTO",
         "email":["rodolfo.conto@ifc.edu.br"], 
         "turmas":["AA22","AB22","AD22","IA22","CA22","THA22"],
-        "cursos_tecnicos":["AGROPECUÁRIA","INFORMÁTICA","CONTROLE AMBIENTAL","HOSPEDAGEM"] 
+        "cursos_tecnicos":["AGROPECUÁRIA","INFORMÁTICA","CONTROLE AMBIENTAL","HOSPEDAGEM"] ,
+        "id":"74"
     },{
         "nome":"RODRIGO CHAVES BARCELLOS GRAZZIOTIN",
         "email":["rodrigo.grazziotin"], 
         "turmas":["AA24","AB24","AC24","AB22"],
-        "cursos_tecnicos":["AGROPECUÁRIA"] 
+        "cursos_tecnicos":["AGROPECUÁRIA"],
+        "id":"75" 
     },{
         "nome":"RODRIGO PEREIRA DE SOUZA",
         "email":["rodrigo.souza@ifc.edu.br"], 
         "turmas":["AA23","AB23"],
-        "cursos_tecnicos":["AGROPECUÁRIA"] 
+        "cursos_tecnicos":["AGROPECUÁRIA"] ,
+        "id":"76"
     },{
         "nome":"RODRIGO SOUZA BANEGAS",
         "email":["rodrigo.banegas@ifc.edu.br"], 
         "turmas":["AA23","AB23","AC23","CA22","CA23"],
-        "cursos_tecnicos":["AGROPECUÁRIA"] 
+        "cursos_tecnicos":["AGROPECUÁRIA"] ,
+        "id":"77"
     },{
         "nome":"ROSANA CEOLIN MENEGHETTI",
         "email":["rosana.meneghetti@ifc.edu.br"], 
         "turmas":["AA23","AB23","AC23"],
-        "cursos_tecnicos":["AGROPECUÁRIA"] 
+        "cursos_tecnicos":["AGROPECUÁRIA"] ,
+        "id":"78"
+
     },{
         "nome":"SANIR DA CONCEICAO",
         "email":["sanir.conceicao@ifc.edu.br"], 
         "turmas":["THA23","THB23","THA24","THB24"],
-        "cursos_tecnicos":["HOSPEDAGEM"
-    ] 
+        "cursos_tecnicos":["HOSPEDAGEM"],
+        "id":"79" 
     },{
         "nome":"SONIA REGINA LAMEGO LINO",
         "email":["sonia.lino@ifc.edu.br"], 
         "turmas":["THA23","THB23","THA24","THB24"],
-        "cursos_tecnicos":["HOSPEDAGEM"] 
+        "cursos_tecnicos":["HOSPEDAGEM"] ,
+        "id":"80"
     },{
         "nome":"THALIA CAMILA COELHO",
         "email":["thalia.coelho@ifc.edu.br"], 
         "turmas":["AA22","AB22","AD22","IA22","THA22","THB22"],
-        "cursos_tecnicos":["AGROPECUÁRIA","INFORMÁTICA","HOSPEDAGEM"] 
+        "cursos_tecnicos":["AGROPECUÁRIA","INFORMÁTICA","HOSPEDAGEM"],
+        "id":"81" 
     },{
         "nome":"THAYSI VENTURA DE SOUZA",
         "email":["thaysi.souza@ifc.edu.br"], 
         "turmas":["IA24","THA23","THB23","THA24","THB24","AA24","AB24","AC24"],
-        "cursos_tecnicos":["INFORMÁTICA","HOSPEDAGEM","AGROPECUÁRIA"] 
+        "cursos_tecnicos":["INFORMÁTICA","HOSPEDAGEM","AGROPECUÁRIA"] ,
+        "id":"82"
     },{
         "nome":"THIAGO HENRIQUE DAS NEVES BARBOSA",
         "email":["thiago.barbosa@ifc.edu.br"], 
         "turmas":["AA22","AB22","AD22","CA22","CA23"],
-        "cursos_tecnicos":["AGROPECUÁRIA","CONTROLE AMBIENTAL"] 
+        "cursos_tecnicos":["AGROPECUÁRIA","CONTROLE AMBIENTAL"],
+        "id":"83" 
     },{
         "nome":"VANESSA BAYER DA ROSA",
         "email":["vanessa.rosa@ifc.edu.br"], 
         "turmas":["AA23","AB23","AC23"],
-        "cursos_tecnicos":["AGROPECUÁRIA"] 
+        "cursos_tecnicos":["AGROPECUÁRIA"] ,
+        "id":"84"
     },{
         "nome":"VANESSA COIMBRA",
         "email":["vanessa.coimbra@ifc.edu.br"], 
         "turmas":["AA23","AB23","AC23"],
-        "cursos_tecnicos":["AGROPECUÁRIA"] 
+        "cursos_tecnicos":["AGROPECUÁRIA"] ,
+        "id":"85"
     },{
         "nome":"VIVIANE FURTADO VELHO",
         "email":["viviane.velho@ifc.edu.br"], 
         "turmas":["CA22","CA23","CA24"],
-        "cursos_tecnicos":["CONTROLE AMBIENTAL"] 
+        "cursos_tecnicos":["CONTROLE AMBIENTAL"] ,
+        "id":"86"
     },{
         "nome":"SUELY LOPES",
         "email":["suely.lopes@ifc.edu.br"], 
         "turmas":["AB24","AC24","THA23","THB23","THA24","THB24","IA24"],
-        "cursos_tecnicos":["AGROPECUÁRIA","INFORMÁTICA","HOSPEDAGEM"] 
+        "cursos_tecnicos":["AGROPECUÁRIA","INFORMÁTICA","HOSPEDAGEM"],
+        "id":"87" 
     },{
         "nome":"WILSON JOSE MORANDI FILHO",
         "email":["wilson.morandi@ifc.edu.br"], 
         "turmas":["AA23","AB23","AC23","AA24","AB24","AC24"],
-        "cursos_tecnicos":["AGROPECUÁRIA"] 
+        "cursos_tecnicos":["AGROPECUÁRIA"] ,
+        "id":"88"
     }
     
 ]
