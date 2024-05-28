@@ -1,47 +1,61 @@
-[
+[   
+    {
+    "nome":"a", 
+    "email":["@ifc.edu.br"],
+    "turmas":["CA23","CA24","THA22","THB22","THA23","THB23"],
+    "cursos_tecnicos":["CONTROLE AMBIENTAL","HOSPEDAGEM"],
+    "id":"0"  
+},
     {
         "nome":"ADRIANO MARTENDAL", 
         "email":["adriano.martendal@ifc.edu.br"],
         "turmas":["CA23","CA24","THA22","THB22","THA23","THB23"],
-        "cursos_tecnicos":["CONTROLE AMBIENTAL","HOSPEDAGEM"]  
+        "cursos_tecnicos":["CONTROLE AMBIENTAL","HOSPEDAGEM"],
+        "id":"1"   
     }
     ,
     {
         "nome":"ACIR FELIPE CARVALHO",
         "email":[""],
         "turmas":["AA23","AB23","AC23","AA24","AB24","AC24",""],
-        "cursos_tecnicos":["AGROPECUÁRIA"]   
+        "cursos_tecnicos":["AGROPECUÁRIA"] ,
+        "id":"2"   
     },
     {
         "nome":"AFONSO DA LUZ LOSS",
         "email":["afonso.loss@ifc.edu.br"],
         "turmas":["THA22","THB22","THA23","THB23","CA22","IA22"],
-        "cursos_tecnicos":["INFORMÁTICA","HOSPEDAGEM","CONTROLE AMBIENTAL"]  
+        "cursos_tecnicos":["INFORMÁTICA","HOSPEDAGEM","CONTROLE AMBIENTAL"],
+        "id":"3"  
     },
     {
         "nome":"ALEXANDRE VANZUITA",
         "email":["alexandre.vanzuita@ifc.edu.br"], 
         "turmas":["AA24","AB24","AC24"],
-        "cursos_tecnicos":["AGROPECUARIA"] 
+        "cursos_tecnicos":["AGROPECUARIA"],
+        "id":"4" 
     },
     
     {
         "nome":"ALLAN CHARLLES MENDES DE SOUSA",
         "email":["allan.sousa@ifc.edu.br"],
         "turmas":["AA24","AB24","AC24"],
-        "cursos_tecnicos":["AGROPECUÁRIA"]  
+        "cursos_tecnicos":["AGROPECUÁRIA"],
+        "id":"5"  
     },
     {
         "nome":"ADRIANA",
         "email":["adriana.barcellos@ifc.edu.br"],
         "turmas":["AA24","AB24","IA22","CA22","THA22","THB22"],
-        "cursos_tecnicos":["AGROPECUÁRIA","INFORMÁTICA","CONTROLE AMBIENTAL","HOSPEDAGEM"]   
+        "cursos_tecnicos":["AGROPECUÁRIA","INFORMÁTICA","CONTROLE AMBIENTAL","HOSPEDAGEM"],
+        "id":"6"   
     },
     {
         "nome":"AMANDA MOSER COELHO DA FONSECA FARO",
         "email":["amanda.faro@ifc.edu.br"],
         "turmas":["AA22","AB22","AD22"],
-        "cursos_tecnicos":["AGROPECUÁRIA"]   
+        "cursos_tecnicos":["AGROPECUÁRIA"],
+        "id":"7"   
     },
     {
         "nome":"CLAUDIA OLIVEIRA ROSA",
