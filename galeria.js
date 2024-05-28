@@ -11,10 +11,10 @@ document.getElementById('searchForm').addEventListener('submit', function(event)
 
             if (professor) {
                 resultDiv.innerHTML = `
-                    <batata><strong>Nome:</strong> ${professor.nome}</batata>
-                    <arroz><strong>Email:</strong> ${professor.email.join(", ")}</arroz>
-                    <p><strong>Turmas:</strong> ${professor.turmas.join(", ")}</p>
-                    <p><strong>Cursos Técnicos:</strong> ${professor.cursos_tecnicos.join(", ")}</p>
+                    <prof><strong>Nome:</strong> ${professor.nome}</prof>
+                    <email><strong>Email:</strong> ${professor.email.join(", ")}</email>
+                    <turma><strong>Turmas:</strong> ${professor.turmas.join(", ")}</turma>
+                    <curso><strong>Cursos Técnicos:</strong> ${professor.cursos_tecnicos.join(", ")}</curso>
                 `;
             } else {
                 resultDiv.innerHTML = '<p>Professor não encontrado.</p>';

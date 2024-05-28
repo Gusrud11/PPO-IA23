@@ -1,4 +1,5 @@
 body {
+  font-family: 'Montserrat', sans-serif;
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -15,17 +16,34 @@ body {
   width: 46px;
   height: 44px;
 }
-batata {
+prof {
   position: absolute;
-  top: 30px;
-  left: 800px;
-  transform:scale(2);
+  top: 3rem;
+  left: 45rem;
+  font-weight: bold;
+  font-size: 50px;
 }
-arroz {
+email {
   border: 2px solid black;
   border-radius: 5px;
   position: absolute;
   top: 200px;
-  right: 50px;
+  right: 100px;
+  transform:scale(1.25);
+}
+turma {
+  border: 2px solid black;
+  border-radius: 5px;
+  position: absolute;
+  top: 250px;
+  right: 100px;
+  transform:scale(1.25);
+}
+curso {
+  border: 2px solid black;
+  border-radius: 5px;
+  position: absolute;
+  top: 300px;
+  right: 100px;
   transform:scale(1.25);
 }
