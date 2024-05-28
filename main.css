@@ -1,3 +1,11 @@
+:root{
+    font-size:16px;
+}
+body{
+    margin:0;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+}
 main{
     display: flex;
     justify-content: center;
@@ -6,31 +14,35 @@ main{
     height: 80vh;
     border: 2px solid;
 }
+.search-input{
+    font-family: "Montserrat", sans-serif;
+}
 .back{
-    border-radius: 0.5em;
-    transform: scale(1.4);
-    position:relative  ;
-    top: 1em;
-    right: 5em;
-    margin-top: 100px;/* cria uma margem que distancia do elemento acima  */
-
-    background-color: #afb9af; /* Cor de fundo */
-    color: white; /* Cor do texto */
+    background-color: #1DB954;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem; /* Cantos arredondados */
+    font-size: 1rem;
+    text-transform: uppercase;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    
  
 }
 
 .forward{
-    border-radius: 0.5em;
-    transform: scale(1.4);
-    position:relative  ;
-    top: 1em;
-    right: 5em;
-    margin-right: 300px; /* aumenta a margem pra direita  */ 
-    margin-top: 100px; /* cria uma margem que distancia do elemento acima  */
-    background-color: #afb9af; /* Cor de fundo */
-  color: white; /* Cor do texto */
-  cursor: pointer;
-
+    background-color: #1DB954;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem; /* Cantos arredondados */
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
 }
 
