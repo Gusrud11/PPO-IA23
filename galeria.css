@@ -24,26 +24,35 @@ prof {
   font-size: 50px;
 }
 email {
-  border: 2px solid black;
-  border-radius: 5px;
+  background-color: #1DB954;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding: 1rem 0.5rem;
+  border: none;
+  border-radius: 2rem;
   position: absolute;
   top: 200px;
   right: 100px;
-  transform:scale(1.25);
 }
 turma {
-  border: 2px solid black;
-  border-radius: 5px;
+  background-color: #1DB954;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding: 1rem 0.5rem;
+  border: none;
+  border-radius: 2rem;
   position: absolute;
-  top: 250px;
+  top: 270px;
   right: 100px;
-  transform:scale(1.25);
 }
 curso {
-  border: 2px solid black;
-  border-radius: 5px;
+  background-color: #1DB954;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding: 1rem 0.5rem;
+  border: none;
+  border-radius: 2rem;
   position: absolute;
-  top: 300px;
+  top: 340px;
   right: 100px;
-  transform:scale(1.25);
 }
