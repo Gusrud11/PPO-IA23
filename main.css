@@ -46,3 +46,16 @@ main{
     
 }
 
+#pessoa{
+    background-color: #1DB954;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem; /* Cantos arredondados */
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 1rem;
+}
