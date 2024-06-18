@@ -3,6 +3,7 @@ void async function () {
     const inputSearch = searchBar.querySelector("input");
     const searchResults = document.querySelector(".search-results");
     const searchButton = searchBar.querySelector(".search-button");
+    const backButton = searchBar.querySelector(".back")
     const response = await fetch('dados.json');
     const items = await response.json();
 
