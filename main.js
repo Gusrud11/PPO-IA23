@@ -19,13 +19,14 @@ void async function () {
             searchResults.innerHTML += `
                 <li>
                   <button id="pessoa">  ${pessoa.nome} - 
-                    ${pessoa.email} </button>
+                   <a href="mailto:${pessoa.email}"> ${pessoa.email}</a> 
+                   </button>
                 </li>
             `;
         });
     };
-    var displayindex=0;
-    displayResults();
+
+    
 
     inputSearch.addEventListener("keydown", ev => {
         if (ev.key === "Enter") {
@@ -49,4 +50,4 @@ forwardbutton.addEventListener("click", () =>{
         displayindex -= 5;
         displayResults();
     }
-}
+})
