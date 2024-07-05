@@ -16,10 +16,20 @@ body {
   width: 46px;
   height: 44px;
 }
+
+temporario {
+  position: absolute;
+  left: 1em;
+}
+
+.quest {
+    display: flex;
+    flex-direction: column;
+}
 prof {
   position: absolute;
   top: 3rem;
-  left: 45rem;
+  left: 50%;
   font-weight: bold;
   font-size: 50px;
 }
@@ -33,6 +43,10 @@ email {
   position: absolute;
   top: 200px;
   right: 100px;
+}
+a:link {
+  text-decoration: none;
+  color:rgb(0, 0, 0);
 }
 turma {
   background-color: #1DB954;
@@ -55,4 +69,14 @@ curso {
   position: absolute;
   top: 340px;
   right: 100px;
+}
+foto {
+  transform: scale(0.5);
+  color: rgb(0, 0, 0);
+  position: absolute;
+  border-radius: 5px;
+  border: 1rem solid;
+  border-color:#1DB954;
+  top: 320px;
+  right: 50px;
 }

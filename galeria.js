@@ -10,13 +10,13 @@ document.getElementById('searchForm').addEventListener('submit', function(event)
             const professor = data.find(prof => prof.nome.toUpperCase() === professorName);
 
             if (professor) {
-                let emailButtons = professor.email.map(email => `<button type="button">${email}</button>`).join("");
 
                 resultDiv.innerHTML = `
-                    <prof><strong>Nome:</strong> ${professor.nome}</prof>
-                    <email><strong>Email:</strong> ${emailButtons}</email>
+                    <prof><strong></strong> ${professor.nome}</prof>
+                    <email><strong>Email:</strong> <a href ='mailto:${professor.email}'>${professor.email}</a></email>
                     <turma><strong>Turmas:</strong> ${professor.turmas.join(", ")}</turma>
                     <curso><strong>Cursos Técnicos:</strong> ${professor.cursos_tecnicos.join(", ")}</curso>
+                    <foto><img src='none.jpg'></img></foto>
                 `;
             } else {
                 resultDiv.innerHTML = '<p>Professor não encontrado.</p>';
