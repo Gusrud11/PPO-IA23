@@ -2,11 +2,13 @@ void async function () {
     const searchBar = document.querySelector(".search-bar");
     const inputSearch = searchBar.querySelector("input");
     const searchResults = document.querySelector(".search-results");
-    const searchButton = searchBar.querySelector(".search-button");
+    const searchButton = searchBar.querySelector("#search-button");
     const backButton = searchBar.querySelector(".back");
     const forwardbutton = searchBar.querySelector(".forward")
     const response = await fetch('dados.json');
     const items = await response.json();
+
+    console.log(searchBar)
 
     var pessoasFiltradas=[];
     var displayindex=0;
