@@ -7,10 +7,16 @@ void async function () {
     const forwardbutton = searchBar.querySelector(".forward")
     const response = await fetch('dados.json');
     const items = await response.json();
+    
+    items.forEach(item =>{
+        item.id= {value:item.id}
+    });
 
-    console.log(searchBar)
+    function dividirArrays(id,tamnanho){
+        let 
+    }
 
-    var pessoasFiltradas=[];
+   
     var displayindex=0;
     const searchFn = value => {
         const pessoasFiltradas = items.filter(pessoa => 
@@ -44,12 +50,12 @@ void async function () {
 backButton.addEventListener("click", () =>{
     if(displayindex + 5 < pessoasFiltradas.Lenght){
         displayindex += 5;
-        displayResults();
+    
     }
 })
 forwardbutton.addEventListener("click", () =>{
     if(displayindex - 5 >= 0){
         displayindex -= 5;
-        displayResults();
+     
     }
 })
