@@ -13,8 +13,14 @@ void async function () {
     });
 
     function dividirArrays(id,tamnanho){
-        let 
+        let sub=[]
+        for(let i=0;i<id.Length;i+=tamnanho){
+            sub.push(id.slice(i+tamnanho))
+        }
+        return sub
     }
+
+    const sub=dividirArrays(items,5)
 
    
     var displayindex=0;
