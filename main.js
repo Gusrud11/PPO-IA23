@@ -4,43 +4,50 @@ void async function () {
     const searchResults = document.querySelector(".search-results");
     const searchButton = searchBar.querySelector("#search-button");
     const backButton = searchBar.querySelector(".back");
-    const forwardbutton = searchBar.querySelector(".forward")
+    const forwardButton = searchBar.querySelector(".forward");
+    
     const response = await fetch('dados.json');
     const items = await response.json();
     
-    items.forEach(item =>{
-        item.id= {value:item.id}
+    items.forEach(item => {
+        item.id = { value: item.id };
     });
 
-    function dividirArrays(id,tamnanho){
-        let sub=[]
-        for(let i=0;i<id.Length;i+=tamnanho){
-            sub.push(id.slice(i+tamnanho))
+    let displayIndex = 0;
+    const itemsPerPage = 5;
+    let filteredItems = items; // Inicialmente, todos os itens são exibidos
+
+    function dividirArrays(array, tamanho) {
+        let subArrays = [];
+        for (let i = 0; i < array.length; i += tamanho) {
+            subArrays.push(array.slice(i, i + tamanho));
         }
-        return sub
+        return subArrays;
     }
 
-    const sub=dividirArrays(items,5)
+    function renderizarResultados() {
+        const subArray = dividirArrays(filteredItems, itemsPerPage);
+        searchResults.innerHTML = "";
+        
+        if (subArray[displayIndex]) {
+            subArray[displayIndex].forEach(pessoa => {
+                searchResults.innerHTML += `
+                    <li>
+                        <button id="pessoa">${pessoa.nome} - 
+                        <a href="mailto:${pessoa.email}">${pessoa.email}</a></button>
+                    </li>
+                `;
+            });
+        }
+    }
 
-   
-    var displayindex=0;
     const searchFn = value => {
-        const pessoasFiltradas = items.filter(pessoa => 
+        filteredItems = items.filter(pessoa => 
             pessoa.nome.toLowerCase().includes(value.toLowerCase())
         );
-        searchResults.innerHTML = "";
-        pessoasFiltradas.forEach(pessoa => {
-            searchResults.innerHTML += `
-                <li>
-                  <button id="pessoa">  ${pessoa.nome} - 
-                   <a href="mailto:${pessoa.email}"> ${pessoa.email}</a> 
-                   </button>
-                </li>
-            `;
-        });
+        displayIndex = 0; // Reseta para a primeira página ao realizar uma nova busca
+        renderizarResultados();
     };
-
-    
 
     inputSearch.addEventListener("keydown", ev => {
         if (ev.key === "Enter") {
@@ -51,17 +58,22 @@ void async function () {
     searchButton.addEventListener("click", () => {
         searchFn(inputSearch.value);
     });
-}();
 
-backButton.addEventListener("click", () =>{
-    if(displayindex + 5 < pessoasFiltradas.Lenght){
-        displayindex += 5;
-    
-    }
-})
-forwardbutton.addEventListener("click", () =>{
-    if(displayindex - 5 >= 0){
-        displayindex -= 5;
-     
-    }
-})
+    backButton.addEventListener("click", () => {
+        if (displayIndex > 0) {
+            displayIndex--;
+            renderizarResultados();
+        }
+    });
+
+    forwardButton.addEventListener("click", () => {
+        const maxIndex = Math.ceil(filteredItems.length / itemsPerPage) - 1;
+        if (displayIndex < maxIndex) {
+            displayIndex++;
+            renderizarResultados();
+        }
+    });
+
+    // Renderiza os itens iniciais
+    renderizarResultados();
+}();
