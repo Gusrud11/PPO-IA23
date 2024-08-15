@@ -2,9 +2,8 @@ void async function () {
     const searchBar = document.querySelector(".search-bar");
     const inputSearch = searchBar.querySelector("input");
     const searchResults = document.querySelector(".search-results");
-    const searchButton = searchBar.querySelector("#search-button");
-    const backButton = searchBar.querySelector(".back");
-    const forwardButton = searchBar.querySelector(".forward");
+    const backButton = document.querySelector(".back");
+    const forwardButton = document.querySelector(".forward");
     
     const response = await fetch('dados.json');
     const items = await response.json();
@@ -55,12 +54,12 @@ void async function () {
         }
     });
 
-    searchButton.addEventListener("click", () => {
-        searchFn(inputSearch.value);
-    });
+    // searchButton.addEventListener("click", () => {
+   //    searchFn(inputSearch.value);
+  //  })
 
     backButton.addEventListener("click", () => {
-        if (displayIndex > 0) {
+        if (displayIndex >= 0) {
             displayIndex--;
             renderizarResultados();
         }
@@ -78,11 +77,11 @@ void async function () {
     renderizarResultados();
 }();
 
-var modal = document.getElementById("myModal");
+const modal = document.getElementById("myModal");
 
-var btn = document.getElementById("myBtn");
+const btn = document.getElementById("myBtn");
 
-var span = document.getElementsByClassName("close")[0];
+const span = document.getElementsByClassName("close")[0];
 
 btn.onclick = function() {
   modal.style.display = "block";
@@ -93,7 +92,11 @@ span.onclick = function() {
 }
 
 window.onclick = function(event) {
-  if (event.target == modal) {
+  if (event.target == modal) {  
     modal.style.display = "none";
   }
 } 
+
+pessoa.onclick = function(){
+    modal.style.dispaly="block"
+}
