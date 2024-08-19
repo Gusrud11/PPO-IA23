@@ -14,8 +14,18 @@ void async function () {
 
     const itemsPerPage = 5;
     let displayIndex = 0;
-    let filteredItems = [];; // Inicialmente, todos os itens são exibidos
+    let filteredItems = [];; // Inicialmente,nehum item exibido
+    let paginaAtual = 1;
 
+    function mostrarPagina(array,tamanho){
+        let totalPagina=math.ceil(array.length/tamanho)
+
+        backButton.style.display = paginaAtual > 1 ? "inline-block" : "none"
+        forwardButton.stytle.display = paginaAtual < totalPagina ? "inline-block": "none"
+        
+        const mostradorPagina = document.querySelector(".mostrador-pagina")
+        mostradorPagina.innerHTML += 'Página ${paginaAtual} de ${totalPagina}'
+    }
     function dividirArrays(array, tamanho) {
         let subArrays = [];
         for (let i = 0; i < array.length; i += tamanho) {
@@ -38,6 +48,7 @@ void async function () {
                 `;
             });
         }
+        mostrarPagina(filteredItems,tamanho);
     }
 
     searchResults.addEventListener("click", ev => {
