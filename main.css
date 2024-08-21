@@ -47,6 +47,14 @@ main{
  
 }
 
+.back:hover{
+    background-color:#67ff9c;
+}
+
+.forward:hover{
+    background-color:#67ff9c;
+}
+
 .forward{
     background-color: #1DB954;
     color: rgb(0, 0, 0);
@@ -60,6 +68,8 @@ main{
     transition: background-color 0.3s ease;
     
 }
+
+
 
 .modal{
     background-color: rgb(196, 196, 196);
@@ -83,6 +93,9 @@ main{
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin: 1rem;
+}
+#pessoa:hover{
+    background-color:#67ff9c;
 }
 
 .mostrador-pagina{
