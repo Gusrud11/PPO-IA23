@@ -1,37 +1,28 @@
-void async function () {
+ void async function () {
     const searchBar = document.querySelector(".search-bar");
     const inputSearch = searchBar.querySelector("input");
     const searchResults = document.querySelector(".search-results");
     const backButton = document.querySelector(".back");
     const forwardButton = document.querySelector(".forward");
+    const mostradorPagina = document.querySelector(".mostrador-pagina");
 
     const response = await fetch('dados.json');
     const items = await response.json();
 
-    // items.forEach(item => {
-    //     item.id = { value: item.id };
-    // });
-
     const itemsPerPage = 5;
     let displayIndex = 0;
-    let filteredItems = [];; // Inicialmente,nehum item exibido
+    let filteredItems = [];
     let paginaAtual = 1;
 
-    function mostrarPagina(array,tamanho){
-        let totalPagina=math.ceil(array.length/tamanho)
+    function mostrarPagina() {
+        const totalPaginas = Math.ceil(filteredItems.length / itemsPerPage);
 
-        backButton.style.display = paginaAtual > 1 ? "inline-block" : "none"
-        forwardButton.stytle.display = paginaAtual < totalPagina ? "inline-block": "none"
-        
-        const mostradorPagina = document.querySelector(".mostrador-pagina")
-        mostradorPagina.innerHTML += 'Página ${paginaAtual} de ${totalPagina}'
-    }
-    function dividirArrays(array, tamanho) {
-        let subArrays = [];
-        for (let i = 0; i < array.length; i += tamanho) {
-            subArrays.push(array.slice(i, i + tamanho));
-        }
-        return subArrays;
+        // Atualiza a exibição dos botões
+        backButton.style.display = paginaAtual > 1 ? "inline-block" : "none";
+        forwardButton.style.display = paginaAtual < totalPaginas ? "inline-block" : "none";
+
+        // Atualiza o mostrador de página
+        mostradorPagina.innerHTML = Página ${paginaAtual} de ${totalPaginas};
     }
 
     function renderizarResultados() {
@@ -48,46 +39,39 @@ void async function () {
                 `;
             });
         }
-        mostrarPagina(filteredItems,tamanho);
+        mostrarPagina();
     }
 
-    searchResults.addEventListener("click", ev => {
-        ev.preventDefault()
-        const li = ev.target.closest("li")
-        if (!li) return
-        const dados = filteredItems[li.dataset.idx]
-        modal.querySelector("p").innerHTML = dados.turmas  
-        modal.style.display = "block";  
-    })
+    function dividirArrays(array, tamanho) {
+        let subArrays = [];
+        for (let i = 0; i < array.length; i += tamanho) {
+            subArrays.push(array.slice(i, i + tamanho));
+        }
+        return subArrays;
+    }
 
     inputSearch.addEventListener("keyup", ev => {
-        // if (ev.key === "Enter") {
-        // searchFn(inputSearch.value);
-        // }
+        const valorDigitadoNoInput = inputSearch.value.trim();
 
-        const valorDigitadoNoInput = inputSearch.value
-
-        if (valorDigitadoNoInput.trim() == '') {
-            filteredItems = []
+        if (valorDigitadoNoInput === '') {
+            filteredItems = [];
             renderizarResultados();
-            return
+            return;
         }
 
         filteredItems = items.filter(pessoa =>
             pessoa.nome.toLowerCase().includes(valorDigitadoNoInput.toLowerCase())
         );
-        
-        displayIndex = 0; // Reseta para a primeira página ao realizar uma nova busca
+
+        displayIndex = 0;
+        paginaAtual = 1;  // Reseta a página atual
         renderizarResultados();
     });
 
-    // searchButton.addEventListener("click", () => {
-    //    searchFn(inputSearch.value);
-    //  })
-
     backButton.addEventListener("click", () => {
-        if (displayIndex >= 0) {
+        if (displayIndex > 0) {
             displayIndex--;
+            paginaAtual--;
             renderizarResultados();
         }
     });
@@ -96,14 +80,16 @@ void async function () {
         const maxIndex = Math.ceil(filteredItems.length / itemsPerPage) - 1;
         if (displayIndex < maxIndex) {
             displayIndex++;
+            paginaAtual++;
             renderizarResultados();
         }
     });
 
-    // Renderiza os itens iniciais
     renderizarResultados();
+    document.addEventListener("DOMContentLoaded", function(){
+        inputSearch.focus();
+    })
 }();
-
 // const modal = document.getElementById("myModal");
 const modal = document.querySelector("#myModal");
 
