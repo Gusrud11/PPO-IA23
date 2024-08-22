@@ -33,6 +33,9 @@ main{
     font-family: "Montserrat", sans-serif;
 }
 .back{
+    position:fixed;
+    bottom:13rem;
+    left: 20rem;
     background-color: #1DB954;
     color: rgb(0, 0, 0);
     font-weight: bold;
@@ -56,6 +59,8 @@ main{
 }
 
 .forward{
+    position:fixed;
+    bottom:13rem;
     background-color: #1DB954;
     color: rgb(0, 0, 0);
     font-weight: bold;
