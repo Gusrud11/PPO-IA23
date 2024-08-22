@@ -1,4 +1,4 @@
- void async function () {
+void async function () {
     const searchBar = document.querySelector(".search-bar");
     const inputSearch = searchBar.querySelector("input");
     const searchResults = document.querySelector(".search-results");
@@ -22,7 +22,7 @@
         forwardButton.style.display = paginaAtual < totalPaginas ? "inline-block" : "none";
 
         // Atualiza o mostrador de página
-        mostradorPagina.innerHTML = Página ${paginaAtual} de ${totalPaginas};
+        mostradorPagina.innerHTML = `Página ${paginaAtual} de ${totalPaginas}`;
     }
 
     function renderizarResultados() {
@@ -85,31 +85,24 @@
         }
     });
 
+    // Renderiza os itens iniciais
     renderizarResultados();
-    document.addEventListener("DOMContentLoaded", function(){
-        inputSearch.focus();
-    })
+
+    // Foca automaticamente no campo de input ao carregar a página
+    inputSearch.focus();
 }();
-// const modal = document.getElementById("myModal");
+
+// Funções relacionadas ao modal
 const modal = document.querySelector("#myModal");
-
-// const btn = document.getElementById("myBtn");
 const btn = document.querySelector("#myBtn");
-
-// const span = document.getElementsByClassName("close")[0];
-// vai toma no seu cú, para de usar getElementByClasseName
-// getElementById ou qualquer bosta dessas, o professor
-// ensinou a usar a porra do querySelector usa esta merda
 const span = document.querySelector(".close");
 
 btn.onclick = function () {
     modal.style.display = "block";
-    // modal.classList.add("open")
 }
 
 span.onclick = function () {
     modal.style.display = "none";
-    // modal.classList.remove("open")
 }
 
 window.onclick = function (event) {
@@ -118,6 +111,9 @@ window.onclick = function (event) {
     }
 }
 
-pessoa.onclick = function () {
-    modal.style.dispaly = "block"
-}
+// Corrigir a referência ao modal na função `pessoa.onclick`
+document.addEventListener('click', function (event) {
+    if (event.target.id === 'pessoa') {
+        modal.style.display = "block";
+    }
+});
