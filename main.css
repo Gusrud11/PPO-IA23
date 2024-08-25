@@ -7,9 +7,31 @@ header img{
 }
 
 #searchInput{
-    border-radius: 10px;
-    width: 150px;
-    height: auto;
+
+
+    width: 37.5rem; /* Aumenta a largura da barra de pesquisa */
+    height: 3.125rem; /* Aumenta a altura da barra de pesquisa */
+    padding: 0 0.9375rem; /* Adiciona mais espaçamento interno */
+    font-size: 1.5625rem; /* Aumenta o tamanho da fonte */
+    border: 1px solid #dfe1e5; /* Borda cinza clara */
+    border-radius: 1.5rem; /* Mantém as bordas arredondadas */
+    outline: none; /* Remove o contorno padrão ao focar */
+    box-shadow: none; /* Sem sombra por padrão */
+    transition: box-shadow 0.2s ease-in-out; /* Transição suave para o foco */
+    background-color: #fff; /* Cor de fundo branco */
+
+  /*  left: 35%;
+    top: 50%;
+    position: fixed;*/
+}
+#searchInput:focus{
+    border-color: #4285f4;
+    box-shadow:0 0.0625rem 0.375rem rgba(32, 33, 36, 0.28);  }
+
+h1{
+    
+   bottom: 10rem;
+    margin: 0; /* Remove margens para controle preciso */
 }
 #pessoa a{
     text-decoration: none;
@@ -17,9 +39,11 @@ header img{
 }
 
 body{
-    margin:0;
+    
+    padding: 0;
     font-size: 1rem;
     font-family: "Montserrat", sans-serif;
+   
 }
 
 main{
@@ -28,14 +52,14 @@ main{
     align-items: center;
     flex-direction: column;
     height: 80vh;
+    
 }
 .search-input{
     font-family: "Montserrat", sans-serif;
+    
 }
 .back{
-    position:fixed;
-    bottom:13rem;
-    left: 20rem;
+ 
     background-color: #1DB954;
     color: rgb(0, 0, 0);
     font-weight: bold;
@@ -59,8 +83,7 @@ main{
 }
 
 .forward{
-    position:fixed;
-    bottom:13rem;
+    
     background-color: #1DB954;
     color: rgb(0, 0, 0);
     font-weight: bold;
