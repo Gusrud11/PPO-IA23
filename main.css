@@ -1,6 +1,7 @@
 :root{
     font-size:16px;
 }
+header{margin-bottom: 1rem;}
 header img{
     width: 300px;
     height: auto;
@@ -8,7 +9,7 @@ header img{
 
 #searchInput{
 
-
+    margin-top: 1rem;
     width: 37.5rem; /* Aumenta a largura da barra de pesquisa */
     height: 3.125rem; /* Aumenta a altura da barra de pesquisa */
     padding: 0 0.9375rem; /* Adiciona mais espaçamento interno */
@@ -19,19 +20,17 @@ header img{
     box-shadow: none; /* Sem sombra por padrão */
     transition: box-shadow 0.2s ease-in-out; /* Transição suave para o foco */
     background-color: #fff; /* Cor de fundo branco */
-
-  /*  left: 35%;
-    top: 50%;
-    position: fixed;*/
+    margin-top: 10rem;
+  
 }
 #searchInput:focus{
     border-color: #4285f4;
     box-shadow:0 0.0625rem 0.375rem rgba(32, 33, 36, 0.28);  }
 
 h1{
+   
     
-   bottom: 10rem;
-    margin: 0; /* Remove margens para controle preciso */
+    margin: 1rem; /* Remove margens para controle preciso */
 }
 #pessoa a{
     text-decoration: none;
@@ -48,12 +47,16 @@ body{
 
 main{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     height: 80vh;
-    
+    margin-top: 1rem;
+    height: calc(100vh - 5rem); /* Ajusta a altura do main considerando o header e margens */
+    padding-top: 1rem;
 }
+    
+
 .search-input{
     font-family: "Montserrat", sans-serif;
     
