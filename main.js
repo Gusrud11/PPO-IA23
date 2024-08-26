@@ -12,17 +12,22 @@ void async function () {
     const itemsPerPage = 5;
     let displayIndex = 0;
     let filteredItems = [];
-    let paginaAtual = 1;
+    let paginaAtual = 0;
+ 
 
     function mostrarPagina() {
         const totalPaginas = Math.ceil(filteredItems.length / itemsPerPage);
-
         // Atualiza a exibição dos botões
         backButton.style.display = paginaAtual > 1 ? "inline-block" : "none";
         forwardButton.style.display = paginaAtual < totalPaginas ? "inline-block" : "none";
 
         // Atualiza o mostrador de página
         mostradorPagina.innerHTML = `Página ${paginaAtual} de ${totalPaginas}`;
+    }
+
+    function apagarButton(){
+        backButton.style.display = paginaAtual =0 ? "inline-block" : "none";
+        forwardButton.style.display = paginaAtual =0 ? "inline-block" : "none";
     }
 
     function renderizarResultados() {
@@ -39,7 +44,12 @@ void async function () {
                 `;
             });
         }
+        if(paginaAtual>=1){
         mostrarPagina();
+        }
+        else if(paginaAtual==0){
+            apagarButton();
+        }
     }
 
     function dividirArrays(array, tamanho) {
@@ -55,16 +65,19 @@ void async function () {
 
         if (valorDigitadoNoInput === '') {
             filteredItems = [];
+            paginaAtual=0;
+            mostradorPagina.innerHTML=``
             renderizarResultados();
             return;
         }
 
         filteredItems = items.filter(pessoa =>
             pessoa.nome.toLowerCase().includes(valorDigitadoNoInput.toLowerCase())
-        );
+        )
+        .sort((a, b) => a.nome.localeCompare(b.nome));
 
         displayIndex = 0;
-        paginaAtual = 1;  // Reseta a página atual
+        paginaAtual = 1;  
         renderizarResultados();
     });
 
@@ -85,32 +98,43 @@ void async function () {
         }
     });
 
-    // Renderiza os itens iniciais
+
     renderizarResultados();
 
-    // Foca automaticamente no campo de input ao carregar a página
     inputSearch.focus();
 }();
 
+
+// const btn = document.getElementById("myBtn");
 // Funções relacionadas ao modal
 const modal = document.querySelector("#myModal");
 const btn = document.querySelector("#myBtn");
+
+// const span = document.getElementsByClassName("close")[0];
+// vai toma no seu cú, para de usar getElementByClasseName
+// getElementById ou qualquer bosta dessas, o professor
+// ensinou a usar a porra do querySelector usa esta merda
 const span = document.querySelector(".close");
 
 btn.onclick = function () {
     modal.style.display = "block";
+    // modal.classList.add("open")
 }
 
 span.onclick = function () {
     modal.style.display = "none";
+    // modal.classList.remove("open")
 }
 
 window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+  if(ev.target ==modal){
+    modal.style.display = "none"
+  }
 }
 
+pessoa.onclick = function () {
+    modal.style.dispaly = "block"
+}
 // Corrigir a referência ao modal na função `pessoa.onclick`
 document.addEventListener('click', function (event) {
     if (event.target.id === 'pessoa') {
