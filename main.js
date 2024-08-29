@@ -51,6 +51,14 @@ void async function () {
             apagarButton();
         }
     }
+     searchResults.addEventListener("click", ev => {
+        ev.preventDefault()
+        const li = ev.target.closest("li")
+        if (!li) return
+        const dados = filteredItems[li.dataset.idx]
+        modal.querySelector("p").innerHTML = dados.turmas  
+        modal.style.display = "block";  
+    })
 
     function dividirArrays(array, tamanho) {
         let subArrays = [];
