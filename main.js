@@ -38,8 +38,7 @@ void async function () {
             subArray[displayIndex].forEach((pessoa, idx) => {
                 searchResults.innerHTML += `
                     <li data-idx=${idx}>
-                        <button id="pessoa">${pessoa.nome} - 
-                        <a href="mailto:${pessoa.email}">${pessoa.email}</a></button>
+                        <button id="pessoa">${pessoa.nome} </button>
                     </li>
                 `;
             });
