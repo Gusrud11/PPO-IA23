@@ -103,13 +103,44 @@ main{
 
 
 .modal{
-    background-color: rgb(196, 196, 196);
+    background-color:rgba(29, 185, 84, 0.9); /* Fundo semi-transparente escuro */
     position: fixed; 
-    z-index: 1; 
-    width: 50%; 
-    height: 50%; 
+    z-index: 1000; /* Certifique-se de que o modal esteja acima de outros conteúdos */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o modal */
+    width: 80%; 
+    max-width: 600px; /* Define um limite máximo de largura */
+    height: auto; 
     border-radius: 20px;
-    display: none;
+    display: none; /* Escondido por padrão */
+    padding: 2rem; /* Adiciona espaçamento interno */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Sombra para destacar o modal */
+    font-family: 'Montserrat', sans-serif; /* Define a fonte para o modal */
+    font-size: 1.3rem;
+}
+.modal-content {
+    background-color: #fff; /* Cor de fundo branca para o conteúdo */
+    padding: 1.5rem; /* Espaçamento interno do conteúdo */
+    border-radius: 10px; /* Cantos arredondados */
+    position: relative; /* Necessário para posicionar o botão de fechar */
+}
+
+.close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 2rem; /* Tamanho maior para o botão de fechar */
+    color: #333; /* Cor escura para o botão de fechar */
+    cursor: pointer; /* Cursor de pointer para indicar que é clicável */
+    transition: color 0.3s ease; /* Transição suave para a cor do botão */
+}
+.close:hover {
+    color: #f00; /* Muda a cor para vermelho quando o cursor passa sobre o botão */
+}
+.modal p {
+    margin: 0; /* Remove a margem padrão dos parágrafos */
+    color: #333; /* Cor do texto no modal */
 }
 
 #pessoa{
