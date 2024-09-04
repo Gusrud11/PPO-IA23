@@ -55,7 +55,12 @@ void async function () {
         const li = ev.target.closest("li")
         if (!li) return
         const dados = filteredItems[li.dataset.idx]
-        modal.querySelector("p").innerHTML = dados.turmas  
+        modal.querySelector("p").innerHTML = `
+        Nome:${dados.nome}; <br>
+        Email:<a href="mailto:${dados.email}">${dados.email};</a> <br>
+        Cursos Técnicos:${dados.cursos_tecnicos}; <br>
+        Turmas:${dados.turmas}; <br>
+        `
         modal.style.display = "block";  
     })
 
