@@ -10,16 +10,16 @@ header img{
 #searchInput{
 
     margin-top: 1rem;
-    width: 37.5rem; /* Aumenta a largura da barra de pesquisa */
-    height: 3.125rem; /* Aumenta a altura da barra de pesquisa */
-    padding: 0 0.9375rem; /* Adiciona mais espaçamento interno */
-    font-size: 1.5625rem; /* Aumenta o tamanho da fonte */
-    border: 1px solid #dfe1e5; /* Borda cinza clara */
-    border-radius: 1.5rem; /* Mantém as bordas arredondadas */
-    outline: none; /* Remove o contorno padrão ao focar */
-    box-shadow: none; /* Sem sombra por padrão */
-    transition: box-shadow 0.2s ease-in-out; /* Transição suave para o foco */
-    background-color: #fff; /* Cor de fundo branco */
+    width: 37.5rem; 
+    height: 3.125rem;
+    padding: 0 0.9375rem; 
+    font-size: 1.5625rem; 
+    border: 1px solid #dfe1e5; 
+    border-radius: 1.5rem; 
+    outline: none;
+    box-shadow: none; 
+    transition: box-shadow 0.2s ease-in-out;
+    background-color: #fff; 
     margin-top: 10rem;
   
 }
@@ -30,7 +30,7 @@ header img{
 h1{
    
     
-    margin: 1rem; /* Remove margens para controle preciso */
+    margin: 1rem; 
 }
 #pessoa a{
     text-decoration: none;
@@ -68,7 +68,7 @@ main{
     font-weight: bold;
     padding: 1rem 2rem;
     border: none;
-    border-radius: 2rem; /* Cantos arredondados */
+    border-radius: 2rem; 
     font-size: 1rem;
     text-transform: uppercase;
     cursor: pointer;
@@ -92,7 +92,7 @@ main{
     font-weight: bold;
     padding: 1rem 2rem;
     border: none;
-    border-radius: 2rem; /* Cantos arredondados */
+    border-radius: 2rem;
     font-size: 1rem;
     text-transform: uppercase;
     cursor: pointer;
@@ -103,44 +103,56 @@ main{
 
 
 .modal{
-    background-color:rgba(29, 185, 84, 0.9); /* Fundo semi-transparente escuro */
+    background-color:rgba(29, 185, 84, 0.9); 
     position: fixed; 
-    z-index: 1000; /* Certifique-se de que o modal esteja acima de outros conteúdos */
+    z-index: 1000; 
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centraliza o modal */
+    transform: translate(-50%, -50%); 
     width: 80%; 
-    max-width: 600px; /* Define um limite máximo de largura */
+    max-width: 600px; 
     height: auto; 
     border-radius: 20px;
-    display: none; /* Escondido por padrão */
-    padding: 2rem; /* Adiciona espaçamento interno */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Sombra para destacar o modal */
-    font-family: 'Montserrat', sans-serif; /* Define a fonte para o modal */
+    display: none; 
+    padding: 2rem; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
+    font-family: 'Montserrat', sans-serif; 
     font-size: 1.3rem;
 }
 .modal-content {
-    background-color: #fff; /* Cor de fundo branca para o conteúdo */
-    padding: 1.5rem; /* Espaçamento interno do conteúdo */
-    border-radius: 10px; /* Cantos arredondados */
-    position: relative; /* Necessário para posicionar o botão de fechar */
+    background-color: #fff; 
+    padding: 1.5rem;
+    border-radius: 10px; 
+    position: relative;
+    margin: 1rem 0; 
 }
 
 .close {
     position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    font-size: 2rem; /* Tamanho maior para o botão de fechar */
-    color: #333; /* Cor escura para o botão de fechar */
-    cursor: pointer; /* Cursor de pointer para indicar que é clicável */
-    transition: color 0.3s ease; /* Transição suave para a cor do botão */
+    top: 0.5rem; 
+    right: 0.5rem; 
+    background-color: #fff; 
+    border: none; 
+    border-radius: 50%; 
+    width: 2.5rem; 
+    height: 2.5rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; 
+    font-size: 2rem; 
+    color: #333; 
+    transition: color 0.3s ease; 
 }
+
 .close:hover {
-    color: #f00; /* Muda a cor para vermelho quando o cursor passa sobre o botão */
+    color: #f00; 
 }
 .modal p {
-    margin: 0; /* Remove a margem padrão dos parágrafos */
-    color: #333; /* Cor do texto no modal */
+  
+    color: #333; 
+    margin: 1rem 0; 
+    line-height: 2; 
 }
 
 #pessoa{
@@ -149,7 +161,7 @@ main{
     font-weight: bold;
     padding: 1rem 2rem;
     border: none;
-    border-radius: 2rem; /* Cantos arredondados */
+    border-radius: 2rem; 
     font-size: 1rem;
     text-transform: uppercase;
     cursor: pointer;
