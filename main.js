@@ -36,8 +36,9 @@ void async function () {
 
         if (subArray[displayIndex]) {
             subArray[displayIndex].forEach((pessoa, idx) => {
+                const globlalIndex= displayIndex * itemsPerPage + idx;
                 searchResults.innerHTML += `
-                    <li data-idx=${idx}>
+                    <li data-idx=${globlalIndex}>
                         <button id="pessoa">${pessoa.nome} </button>
                     </li>
                 `;
@@ -120,7 +121,9 @@ void async function () {
 // const btn = document.getElementById("myBtn");
 // Funções relacionadas ao modal
 const modal = document.querySelector("#myModal");
-const btn = document.querySelector("#myBtn");
+
+//const btn = document.querySelector("#myBtn");
+//chupa btn de merda;seu coco
 
 // const span = document.getElementsByClassName("close")[0];
 // vai toma no seu cú, para de usar getElementByClasseName
@@ -128,10 +131,7 @@ const btn = document.querySelector("#myBtn");
 // ensinou a usar a porra do querySelector usa esta merda
 const span = document.querySelector(".close");
 
-btn.onclick = function () {
-    modal.style.display = "block";
-    // modal.classList.add("open")
-}
+
 
 span.onclick = function () {
     modal.style.display = "none";
@@ -139,13 +139,13 @@ span.onclick = function () {
 }
 
 window.onclick = function (event) {
-  if(ev.target ==modal){
+  if(ev.target ===modal){
     modal.style.display = "none"
   }
 }
 
 pessoa.onclick = function () {
-    modal.style.dispaly = "block"
+    modal.style.display = "block"
 }
 // Corrigir a referência ao modal na função `pessoa.onclick`
 document.addEventListener('click', function (event) {
