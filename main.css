@@ -110,14 +110,14 @@ main{
     left: 50%;
     transform: translate(-50%, -50%); 
     width: 80%; 
-    max-width: 600px; 
+    max-width: 800px; 
     height: auto; 
     border-radius: 20px;
     display: none; 
     padding: 2rem; 
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
     font-family: 'Montserrat', sans-serif; 
-    font-size: 1.3rem;
+    font-size: 18px;
 }
 .modal-content {
     background-color: #fff; 
