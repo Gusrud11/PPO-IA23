@@ -17,12 +17,15 @@ void async function () {
 
     function mostrarPagina() {
         const totalPaginas = Math.ceil(filteredItems.length / itemsPerPage);
-        // Atualiza a exibição dos botões
         backButton.style.display = paginaAtual > 1 ? "inline-block" : "none";
         forwardButton.style.display = paginaAtual < totalPaginas ? "inline-block" : "none";
-
-        // Atualiza o mostrador de página
-        mostradorPagina.innerHTML = `Página ${paginaAtual} de ${totalPaginas}`;
+        if(totalPaginas >0){
+            mostradorPagina.style.display = "block";
+            mostradorPagina.innerHTML =  `Página ${paginaAtual} de ${totalPaginas}`;
+        }
+        if(totalPaginas == 0){
+            mostradorPagina.style.display = "none";
+        }
     }
 
     function apagarButton(){
@@ -55,11 +58,13 @@ void async function () {
         ev.preventDefault()
         const li = ev.target.closest("li")
         if (!li) return
+        li.style.display = "list-style-type" , "none";
         const dados = filteredItems[li.dataset.idx]
         modal.querySelector("p").innerHTML = `
         Nome:${dados.nome}; <br>
         Email:<a href="mailto:${dados.email}">${dados.email};</a> <br>
         Cursos Técnicos:${dados.cursos_tecnicos}; <br>
+        
         Turmas:${dados.turmas}; <br>
         `
         modal.style.display = "block";  
@@ -76,7 +81,7 @@ void async function () {
     inputSearch.addEventListener("keyup", ev => {
         const valorDigitadoNoInput = inputSearch.value.trim();
 
-        if (valorDigitadoNoInput === '') {
+        if (valorDigitadoNoInput === ''  ) {
             filteredItems = [];
             paginaAtual=0;
             mostradorPagina.innerHTML=``
@@ -88,10 +93,11 @@ void async function () {
             pessoa.nome.toLowerCase().includes(valorDigitadoNoInput.toLowerCase())
         )
         .sort((a, b) => a.nome.localeCompare(b.nome));
-
+       
         displayIndex = 0;
         paginaAtual = 1;  
         renderizarResultados();
+
     });
 
     backButton.addEventListener("click", () => {

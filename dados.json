@@ -1443,5 +1443,17 @@
         "cursos_tecnicos": [
             "AGROPECUÁRIA"
         ]
+    },
+    {
+        "nome":"Wellington Marques Oliveira",
+        "email":["wmolivei7@gmail.com"
+        ],
+        "turmas":[
+            "IA23"
+        ],
+        "cursos_tecnicos":[
+            "INFORMÁTICA"
+        ]
+
     }
 ]
