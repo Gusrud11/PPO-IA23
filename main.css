@@ -17,6 +17,7 @@ header img{
     height: auto;
 }
 
+
 #searchInput{
 
     margin-top: 1rem;
@@ -96,6 +97,7 @@ main{
     margin: 0.5rem;
     padding: 1rem;
     background-color:rgb(89, 111, 193);
+    transition: background-color 0.3s ease;
     color: white;
     border: none;
     cursor: pointer;
@@ -182,3 +184,12 @@ main{
     flex-direction: column;
     align-items: center;
 }
+
+li {
+    list-style-type: none; /* Remove o marcador padrão */
+    padding: 1em; /* Adiciona espaçamento interno */
+    margin: 0.5em 0; /* Adiciona espaçamento entre os itens */
+    border-radius: 0.5em; /* Adiciona cantos arredondados */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+}
+
