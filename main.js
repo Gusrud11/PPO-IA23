@@ -159,3 +159,13 @@ document.addEventListener('click', function (event) {
         modal.style.display = "block";
     }
 });
+
+
+
+//////Inicio Automacao
+
+const axios = require("axios")
+const cheerio = require("cheerio")
+const express = require("express")
+
+const port =process.env.port || 4000;
