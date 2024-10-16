@@ -166,6 +166,34 @@ document.addEventListener('click', function (event) {
 
 const axios = require("axios")
 const cheerio = require("cheerio")
-const express = require("express")
 
-const port =process.env.port || 4000;
+
+const port = process.env.port || 3000
+
+const url = 'https://sig.ifc.edu.br/sigaa/public/docente/disciplinas.jsf?siape=1629341'
+
+const getDisciplinas = async () =>{
+    try{
+        const {data} = await axios.get(url)//axios utiliza o metodo get para acessar a pagina e pegar os dados;
+        const dataHtml= cheerio.load(data)//cheerio carrega o html da pagina
+
+        const listJson=[]
+
+        dataHtml('td').each((index,element) => {
+            const materia =  dataHtml('element').find('a').text().trim()
+        
+        listJson.push({
+            materia
+        })
+    })
+
+        const dataJson= JSON.stringify(listJson,null,1)
+
+        console.log(dataJson)
+    }
+    catch (error){
+        console.error("Erro ao realizar o scrapping")
+    }
+}
+
+getDisciplinas();
