@@ -9,9 +9,11 @@ body{
     background-color: rgb(236, 236, 236);
 }
 header{
+    max-height: 7rem;
     margin-bottom: 1rem;
     display: flex;
 }
+
 header img{
     width:  3rem;
     height: auto;
@@ -190,6 +192,13 @@ c, cc {
     margin-left: 2rem;
     margin-top: 2rem;
     height:auto;
-    width: 5rem;
+    display:grid;
+    width: 10rem;
     text-align: center;
+}
+
+#dark_mode_button {
+    margin-left:auto;
+    margin-right: 3rem;
+    margin-top: 3rem;
 }
