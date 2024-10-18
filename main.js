@@ -5,6 +5,7 @@ void async function () {
     const backButton = document.querySelector(".back");
     const forwardButton = document.querySelector(".forward");
     const mostradorPagina = document.querySelector(".mostrador-pagina");
+    const checkbox = document.querySelector("#alanjesus");
 
     const response = await fetch('dados.json');
     const items = await response.json();
@@ -159,6 +160,15 @@ document.addEventListener('click', function (event) {
         modal.style.display = "block";
     }
 });
+
+check_box.addEventListener('change', Escurecer);
+function Escurecer(){
+    if(checkbox.checked == true){
+        document.body.setAttribute('style', 'background-color:rgb(41, 41, 54);');
+        document.body.setAttribute('style', 'text-color:rgb(236, 236, 236);');
+        console.log("Teste");
+    }
+};
 
 
 
