@@ -5,7 +5,9 @@ void async function () {
     const backButton = document.querySelector(".back");
     const forwardButton = document.querySelector(".forward");
     const mostradorPagina = document.querySelector(".mostrador-pagina");
-    const checkbox = document.querySelector("#alanjesus");
+    const tyler = document.querySelector("#alanjesus"); //eu tenho que consertar isso, e mudar o nome
+
+    console.log(tyler);
 
     const response = await fetch('dados.json');
     const items = await response.json();
@@ -145,15 +147,15 @@ span.onclick = function () {
     // modal.classList.remove("open")
 }
 
+
+/* --------------------------------------------------Querido, Isaac. Acredito que a função abaixo não estava fazendo absolutamente nada alem de dar erro no codigo
 window.onclick = function (event) {
   if(ev.target ===modal){
     modal.style.display = "none"
   }
-}
+}*/
 
-pessoa.onclick = function () {
-    modal.style.display = "block"
-}
+
 // Corrigir a referência ao modal na função `pessoa.onclick`
 document.addEventListener('click', function (event) {
     if (event.target.id === 'pessoa') {
@@ -161,14 +163,17 @@ document.addEventListener('click', function (event) {
     }
 });
 
-check_box.addEventListener('change', Escurecer);
+// Função pro modo escuro (E daqui pra frente o código vira uma trincheira)
 function Escurecer(){
-    if(checkbox.checked == true){
+    console.log("Teste");
+    if(this.checked == true){
         document.body.setAttribute('style', 'background-color:rgb(41, 41, 54);');
         document.body.setAttribute('style', 'text-color:rgb(236, 236, 236);');
         console.log("Teste");
     }
-};
+}
+
+document.querySelector("#alanjesus").addEventListener('change', Escurecer);
 
 
 
