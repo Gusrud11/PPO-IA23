@@ -167,9 +167,8 @@ document.addEventListener('click', function (event) {
 function Escurecer(){
     console.log("Teste");
     if(this.checked == true){
-        document.body.setAttribute('style', 'background-color:rgb(41, 41, 54);');
-        document.body.setAttribute('style', 'text-color:rgb(236, 236, 236);');
-        console.log("Teste");
+        document.body.style.backgroundColor="rgb(41, 41, 54);"
+        document.body.s //tenho que terminaaarrrr
     }
 }
 
