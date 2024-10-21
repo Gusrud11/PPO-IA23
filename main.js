@@ -165,10 +165,13 @@ document.addEventListener('click', function (event) {
 
 // Função pro modo escuro (E daqui pra frente o código vira uma trincheira)
 function Escurecer(){
-    console.log("Teste");
     if(this.checked == true){
-        document.body.style.backgroundColor="rgb(41, 41, 54);"
-        document.body.s //tenho que terminaaarrrr
+        document.body.style.backgroundColor="rgb(41, 41, 54)";
+        document.body.style.color="rgb(236, 236, 236)";
+    }
+    if(this.checked == false){
+        document.body.style.backgroundColor="rgb(236, 236, 236)";
+        document.body.style.color="rgb(41, 41, 54)";
     }
 }
 
