@@ -1,7 +1,6 @@
-const axios = require("axios");
-const cheerio = require("cheerio");
-const fs = require("fs")
-
+import axios from "axios"
+import cheerios from "cheerio"
+import fs from "fs"
 const url = [
     'https://sig.ifc.edu.br/sigaa/public/docente/disciplinas.jsf?siape=1629341'
     
@@ -18,10 +17,8 @@ const getDisciplinas = async () => {
             dataHtml('.turmas-integrado td').each((index, element) => {
                 const materia = dataHtml(element).find('a').text().trim();
                 
-                if (materia) {
-                    listJSON.push({
-                        materia
-                    });
+                if (materia && !novasMateria.includes(materia)) {
+                    novasMateria.push(materia)
                 }
             });
 
