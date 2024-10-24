@@ -69,6 +69,7 @@ void async function () {
         Cursos Técnicos: ${dados.cursos_tecnicos}; <br>
         
         Turmas: ${dados.turmas}; <br>
+        Disciplinas:${dados.materia};<br>
         `
         modal.style.display = "block";  
     })

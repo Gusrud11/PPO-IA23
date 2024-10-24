@@ -1,6 +1,6 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
-
+const fs = require("fs")
 
 const url = [
     'https://sig.ifc.edu.br/sigaa/public/docente/disciplinas.jsf?siape=1629341'
@@ -8,26 +8,45 @@ const url = [
 ];
 
 const getDisciplinas = async () => {
-    const listJson = [];
+    const listJSON = [];
 
     try {
         const requisicoes = await Promise.all(url.map(async (url) => {
             const { data } = await axios.get(url);  // axios utiliza o método GET para acessar a página e pegar os dados
             const dataHtml = cheerio.load(data);    // cheerio carrega o HTML da página
 
-            dataHtml('td').each((index, element) => {
+            dataHtml('.turmas-integrado td').each((index, element) => {
                 const materia = dataHtml(element).find('a').text().trim();
                 
                 if (materia) {
-                    listJson.push({
+                    listJSON.push({
                         materia
                     });
                 }
             });
-        }));
 
-        const dataJson = JSON.stringify(listJson, null, 1);
-        console.log(dataJson);
+            fs.readFile("dados.json","utf8",(err,fileData)=>{
+                let existingData = []
+
+                if(!err){
+                    existingData=JSON.parse(fileData)
+                }
+
+                const updatedData= existingData.concat(listJSON)
+
+                const dataJSON = JSON.stringfy(updateData,null,2)
+
+                fs.writeFile("dados.json",dataJSON, (err) =>{
+                    if(err){
+                        console.error("Erro ao salvar arquivos",err)
+                    }
+                    if(!err){
+                        console.log("Arquivo escrito e salvo",)
+                    }
+                })
+            })
+
+        }));
 
     } catch (error) {
         console.error("Erro ao realizar o scraping:", error.message);
