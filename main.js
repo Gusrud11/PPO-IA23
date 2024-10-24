@@ -5,9 +5,9 @@ void async function () {
     const backButton = document.querySelector(".back");
     const forwardButton = document.querySelector(".forward");
     const mostradorPagina = document.querySelector(".mostrador-pagina");
-    const tyler = document.querySelector("#alanjesus"); //eu tenho que consertar isso, e mudar o nome
-
-    console.log(tyler);
+    searchinput = document.querySelector(".searchInput"); //não deveria estar funcionando sem const, mas, pelo contrário, não está funcionando com o maldito const 
+    modalp = document.querySelector(".modal p"); //eu tbm tentei var e let nessa caceta e não funcionou
+    
 
     const response = await fetch('dados.json');
     const items = await response.json();
@@ -69,7 +69,6 @@ void async function () {
         Cursos Técnicos: ${dados.cursos_tecnicos}; <br>
         
         Turmas: ${dados.turmas}; <br>
-        Disciplinas:${dados.materia};<br>
         `
         modal.style.display = "block";  
     })
@@ -169,14 +168,18 @@ function Escurecer(){
     if(this.checked == true){
         document.body.style.backgroundColor="rgb(41, 41, 54)";
         document.body.style.color="rgb(236, 236, 236)";
+        searchinput.style.backgroundColor="rgb(50, 50, 60)";
+        searchinput.style.color="rgb(236, 236, 236)";
     }
     if(this.checked == false){
         document.body.style.backgroundColor="rgb(236, 236, 236)";
         document.body.style.color="rgb(41, 41, 54)";
+        searchinput.style.backgroundColor="white";
+        searchinput.style.color="black";
     }
 }
 
-document.querySelector("#alanjesus").addEventListener('change', Escurecer);
+document.querySelector(".alanjesus").addEventListener('change', Escurecer);
 
 
 
