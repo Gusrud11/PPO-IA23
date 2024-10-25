@@ -6,7 +6,8 @@ void async function () {
     const forwardButton = document.querySelector(".forward");
     const mostradorPagina = document.querySelector(".mostrador-pagina");
     searchinput = document.querySelector(".searchInput"); //não deveria estar funcionando sem const, mas, pelo contrário, não está funcionando com o maldito const 
-    modalp = document.querySelector(".modal p"); //eu tbm tentei var e let nessa caceta e não funcionou
+    modalc = document.querySelector(".modal-content"); //eu tbm tentei var e let nessa caceta e não funcionou
+    close_ = document.querySelector(".close");
     
 
     const response = await fetch('dados.json');
@@ -170,12 +171,18 @@ function Escurecer(){
         document.body.style.color="rgb(236, 236, 236)";
         searchinput.style.backgroundColor="rgb(50, 50, 60)";
         searchinput.style.color="rgb(236, 236, 236)";
+        modalc.style.color="rgb(236, 236, 236)";
+        modalc.style.backgroundColor="rgb(41, 41, 54)";
+        close_.style.color="rgb(236, 236, 236)";
     }
     if(this.checked == false){
         document.body.style.backgroundColor="rgb(236, 236, 236)";
         document.body.style.color="rgb(41, 41, 54)";
         searchinput.style.backgroundColor="white";
         searchinput.style.color="black";
+        modalc.style.color="black";
+        modalc.style.backgroundColor="rgb(236, 236, 236)";
+        close_.style.color="rgb(41, 41, 54)";
     }
 }
 

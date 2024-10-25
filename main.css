@@ -126,7 +126,7 @@ main{
     position: absolute;
     top: 0.5rem; 
     right: 0.5rem; 
-    background-color: #fff; 
+    background-color: rgba(0, 0, 0, 0); 
     border: none; 
     border-radius: 50%; 
     width: 2.5rem; 
@@ -136,7 +136,7 @@ main{
     justify-content: center;
     cursor: pointer; 
     font-size: 2rem; 
-    color: #333; 
+    color: black; 
     transition: color 0.3s ease; 
 }
 
@@ -205,4 +205,8 @@ c, cc {
     margin-left:auto;
     margin-right: 3rem;
     margin-top: 3rem;
+}
+
+.alanjesus {
+    border-radius: 50%;
 }
