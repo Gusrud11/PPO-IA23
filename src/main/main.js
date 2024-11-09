@@ -10,7 +10,7 @@ void async function () {
     close_ = document.querySelector(".close");
     
 
-    const response = await fetch('dados.json');
+    const response = await fetch('../data/dados.json');
     const items = await response.json();
 
     const itemsPerPage = 5;
