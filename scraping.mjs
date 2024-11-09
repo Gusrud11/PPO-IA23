@@ -1,6 +1,7 @@
 import axios from "axios"
-import cheerios from "cheerio"
+import * as cheerio from "cheerio"
 import fs from "fs"
+console.log("sucessor 2 vezes rapa")
 const url = [
     'https://sig.ifc.edu.br/sigaa/public/docente/disciplinas.jsf?siape=1629341'
     
@@ -16,7 +17,7 @@ const getDisciplinas = async () => {
 
             dataHtml('.turmas-integrado td').each((index, element) => {
                 const materia = dataHtml(element).find('a').text().trim();
-                
+                console.log(materia)
                 if (materia && !novasMateria.includes(materia)) {
                     novasMateria.push(materia)
                 }
