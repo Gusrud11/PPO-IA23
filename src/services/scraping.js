@@ -1,11 +1,10 @@
-import axios from "axios"
-import * as cheerio from "cheerio"
-import fs from "fs"
+const axios = require("axios");
+const cheerio = require("cheerio");
+const fs = require("fs");
 console.log("sucessor 2 vezes rapa")
 const url = [
-    'https://sig.ifc.edu.br/sigaa/public/docente/disciplinas.jsf?siape=1629341'
-    
-];
+    'https://sig.ifc.edu.br/sigaa/public/docente/disciplinas.jsf?siape=1915374'
+    ];
 
 const getDisciplinas = async () => {
     const listJSON = [];
@@ -32,7 +31,7 @@ const getDisciplinas = async () => {
 
                 const updatedData= existingData.concat(listJSON)
 
-                const dataJSON = JSON.stringfy(updateData,null,2)
+                const dataJSON = JSON.stringfy(updatedData,null,2)
 
                 fs.writeFile("dados.json",dataJSON, (err) =>{
                     if(err){
