@@ -8,7 +8,7 @@ const url = [
 
 const getDisciplinas = async () => {
     const listJSON = [];
-
+    const novasMaterias = [];
     try {
         const requisicoes = await Promise.all(url.map(async (url) => {
             const { data } = await axios.get(url);  // axios utiliza o método GET para acessar a página e pegar os dados
