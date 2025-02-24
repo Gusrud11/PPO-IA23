@@ -14,7 +14,7 @@ const getDisciplinas = async () => {
             const { data } = await axios.get(url);  // axios utiliza o método GET para acessar a página e pegar os dados
             const dataHtml = cheerio.load(data);    // cheerio carrega o HTML da página
             console.log(dataHtml.html());
-            dataHtml('#listagem tbody tr td').each((index, element) => {
+            dataHtml('.listagem tbody tr td').each((index, element) => {
                 const materia = dataHtml(element).find('a').text().trim();
                 console.log(materia)
                 if (materia && !novasMateria.includes(materia)) {
