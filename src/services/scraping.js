@@ -13,8 +13,8 @@ const getDisciplinas = async () => {
         const requisicoes = await Promise.all(url.map(async (url) => {
             const { data } = await axios.get(url);  // axios utiliza o método GET para acessar a página e pegar os dados
             const dataHtml = cheerio.load(data);    // cheerio carrega o HTML da página
-
-            dataHtml('.turmas-integrado td').each((index, element) => {
+            console.log(dataHtml.html());
+            dataHtml('#listagem tbody tr td').each((index, element) => {
                 const materia = dataHtml(element).find('a').text().trim();
                 console.log(materia)
                 if (materia && !novasMateria.includes(materia)) {
@@ -31,7 +31,7 @@ const getDisciplinas = async () => {
 
                 const updatedData= existingData.concat(listJSON)
 
-                const dataJSON = JSON.stringfy(updatedData,null,2)
+                const dataJSON = JSON.stringify(updatedData,null,2)
 
                 fs.writeFile("dados.json",dataJSON, (err) =>{
                     if(err){
