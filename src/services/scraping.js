@@ -8,14 +8,15 @@ const url = [
 
 const getDisciplinas = async () => {
     const listJSON = [];
-    const novasMaterias = [];
+    const novasMateria = [];
+    let materia=[];
     try {
         const requisicoes = await Promise.all(url.map(async (url) => {
             const { data } = await axios.get(url);  // axios utiliza o método GET para acessar a página e pegar os dados
             const dataHtml = cheerio.load(data);    // cheerio carrega o HTML da página
-            console.log(dataHtml.html());
+           // console.log(dataHtml.html()); 
             dataHtml('.listagem tbody tr td').each((index, element) => {
-                const materia = dataHtml(element).find('a').text().trim();
+                materia = dataHtml(element).find('a').text().trim();
                 console.log(materia)
                 if (materia && !novasMateria.includes(materia)) {
                     novasMateria.push(materia)
