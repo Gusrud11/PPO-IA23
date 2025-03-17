@@ -18,16 +18,15 @@ const getDisciplinas = async () => {
             dataHtml('.listagem tbody tr td').each((index, element) => {
                 materia = dataHtml(element).find('a').text().trim();
                 console.log(materia)
-                if (materia && !novasMateria.includes(materia)) {
-                    novasMateria.push(materia)
-                }
+                listJSON.push(materia)
             });
-
+            console.log(listJSON)
             fs.readFile("dados.json","utf8",(err,fileData)=>{
                 let existingData = []
 
                 if(!err){
                     existingData=JSON.parse(fileData)
+                    console.log("zaza")
                 }
 
                 const updatedData= existingData.concat(listJSON)
