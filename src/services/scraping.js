@@ -8,7 +8,6 @@ const url = [
 
 const getDisciplinas = async () => {
     const listJSON = [];
-    const novasMateria = [];
     let materia=[];
     try {
         const requisicoes = await Promise.all(url.map(async (url) => {
@@ -17,30 +16,32 @@ const getDisciplinas = async () => {
            // console.log(dataHtml.html()); 
             dataHtml('.listagem tbody tr td').each((index, element) => {
                 materia = dataHtml(element).find('a').text().trim();
-                console.log(materia)
+                //console.log(materia)
                 listJSON.push(materia)
             });
             console.log(listJSON)
-            fs.readFile("dados.json","utf8",(err,fileData)=>{
-                let existingData = []
+            fs.readFile("dados.json", "utf8", (err, fileData) => {
+                let existingData = [];
 
-                if(!err){
-                    existingData=JSON.parse(fileData)
-                    console.log("zaza")
+                if (!err) {
+                    existingData = JSON.parse(fileData);
                 }
 
-                const updatedData= existingData.concat(listJSON)
+                // Filtrar apenas os itens que ainda não existem no arquivo
+                const uniqueData = listJSON.filter((item) => !existingData.includes(item));
 
-                const dataJSON = JSON.stringify(updatedData,null,2)
+                // Concatenar os novos itens únicos ao array existente
+                const updatedData = existingData.concat(uniqueData);
 
-                fs.writeFile("dados.json",dataJSON, (err) =>{
-                    if(err){
-                        console.error("Erro ao salvar arquivos",err)
+                const dataJSON = JSON.stringify(updatedData, null, 2);
+
+                fs.writeFile("dados.json", dataJSON, (err) => {
+                    if (err) {
+                        console.error("Erro ao salvar arquivos", err);
+                    } else {
+                        console.log("Arquivo escrito e salvo");
                     }
-                    if(!err){
-                        console.log("Arquivo escrito e salvo",)
-                    }
-                })
+                });
             })
 
         }));
