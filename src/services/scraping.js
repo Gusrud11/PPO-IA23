@@ -8,20 +8,30 @@ const url = [
 
 const getDisciplinas = async () => {
     const listJSON = [];
-    let materia=[];
+    let materia = [];
     try {
         const requisicoes = await Promise.all(url.map(async (url) => {
             const { data } = await axios.get(url);  
             const dataHtml = cheerio.load(data);   
-            dataHtml('.listagem tbody tr td').each((index, element) => {
-                const anoPeriodo = dataHtml(element).find('.anoPeriodo').text().trim();
-                if(anoPeriodo === "2025"){
-                materia = dataHtml(element).find('a').text().trim();
+            dataHtml('.listagem tbody tr').each((index, element) => {
+                const anoPeriodo = dataHtml(element).find('td.anoPeriodo').text().trim();
+                console.log("Ano/Período:", anoPeriodo);
+
+                // Filtrar apenas as matérias de 2025
+                if (anoPeriodo.includes("2025")) {
+                    const materiaElement = dataHtml(element).find('td a');
+                    console.log("Elemento matéria:", materiaElement.html()); // Depuração para verificar o HTML do elemento
+
+                    materia = materiaElement.text().trim();
+                    console.log("Matéria capturada:", materia); // Depuração para verificar o texto capturado
+
+                    const InfoProf = { materia, anoPeriodo };
+                    listJSON.push(InfoProf);
                 }
-            const InfoProf={materia}
-                listJSON.push(InfoProf);
+
             });
-            console.log(listJSON)
+
+            console.log(listJSON);
             fs.readFile("dados.json", "utf8", (err, fileData) => {
                 let existingData = [];
 
@@ -30,7 +40,11 @@ const getDisciplinas = async () => {
                 }
 
                 // Filtrar apenas os itens que ainda não existem no arquivo
-                const uniqueData = listJSON.filter((item) => !existingData.includes(item));
+                const uniqueData = listJSON.filter((item) => 
+                    !existingData.some(existingItem => 
+                        existingItem.materia === item.materia && existingItem.anoPeriodo === item.anoPeriodo
+                    )
+                );
 
                 // Concatenar os novos itens únicos ao array existente
                 const updatedData = existingData.concat(uniqueData);
@@ -44,7 +58,7 @@ const getDisciplinas = async () => {
                         console.log("Arquivo escrito e salvo");
                     }
                 });
-            })
+            });
 
         }));
 
