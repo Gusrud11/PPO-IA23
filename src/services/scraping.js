@@ -3,21 +3,23 @@ const cheerio = require("cheerio");
 const fs = require("fs");
 console.log("sucessor 2 vezes rapa")
 const url = [
-    'https://sig.ifc.edu.br/sigaa/public/docente/disciplinas.jsf?siape=1915374'
-    ];
+   'https://sig.ifc.edu.br/sigaa/public/docente/disciplinas.jsf?siape=1915374',
+];
 
 const getDisciplinas = async () => {
     const listJSON = [];
     let materia=[];
     try {
         const requisicoes = await Promise.all(url.map(async (url) => {
-            const { data } = await axios.get(url);  // axios utiliza o método GET para acessar a página e pegar os dados
-            const dataHtml = cheerio.load(data);    // cheerio carrega o HTML da página
-           // console.log(dataHtml.html()); 
+            const { data } = await axios.get(url);  
+            const dataHtml = cheerio.load(data);   
             dataHtml('.listagem tbody tr td').each((index, element) => {
+                const anoPeriodo = dataHtml(element).find('.anoPeriodo').text().trim();
+                if(anoPeriodo === "2025"){
                 materia = dataHtml(element).find('a').text().trim();
-                //console.log(materia)
-                listJSON.push(materia)
+                }
+            const InfoProf={materia}
+                listJSON.push(InfoProf);
             });
             console.log(listJSON)
             fs.readFile("dados.json", "utf8", (err, fileData) => {
