@@ -13,21 +13,15 @@ const getDisciplinas = async () => {
         const requisicoes = await Promise.all(url.map(async (url) => {
             const { data } = await axios.get(url);  
             const dataHtml = cheerio.load(data);   
-            dataHtml('.listagem tbody tr').each((index, element) => {
+            dataHtml('.listagem tbody tr ').each((index,element) => {
                 const anoPeriodo = dataHtml(element).find('td.anoPeriodo').text().trim();
-                console.log("Ano/Período:", anoPeriodo);
-
-                // Filtrar apenas as matérias de 2025
-                if (anoPeriodo.includes("2025")) {
-                    const materiaElement = dataHtml(element).find('td a');
-                    console.log("Elemento matéria:", materiaElement.html()); // Depuração para verificar o HTML do elemento
-
-                    materia = materiaElement.text().trim();
-                    console.log("Matéria capturada:", materia); // Depuração para verificar o texto capturado
-
+                // const materiaElement = dataHtml(element).find('td a').text().trim();
+                if(anoPeriodo.trim().startsWith("2025")){
+                    const materia = dataHtml(element).find('td a').text().trim();
                     const InfoProf = { materia, anoPeriodo };
                     listJSON.push(InfoProf);
                 }
+               
 
             });
 
