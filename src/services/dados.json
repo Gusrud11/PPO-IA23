@@ -1,58 +1,44 @@
 [
   {
-    "anoPeriodo": "2025.1",
-    "codigo": "AGB0301",
-    "nome": "AQUICULTURA GERAL",
-    "cargaHoraria": "45h",
-    "horario": "4T123 (24/02/2025 - 04/07/2025)"
-  },
-  {
     "anoPeriodo": "2025",
-    "codigo": "APB0332-2",
-    "nome": "PRÁTICA PROFISSIONAL ORIENTADA II",
-    "cargaHoraria": "120h",
-    "horario": "3M1234 (10/02/2025 - 10/12/2025)"
-  },
-  {
-    "anoPeriodo": "2025",
-    "codigo": "APB0332-2",
-    "nome": "PRÁTICA PROFISSIONAL ORIENTADA II",
-    "cargaHoraria": "120h",
-    "horario": "4M1234 (10/02/2025 - 10/12/2025)"
-  },
-  {
-    "anoPeriodo": "2025",
-    "codigo": "APB0332-2",
-    "nome": "PRÁTICA PROFISSIONAL ORIENTADA II",
-    "cargaHoraria": "120h",
-    "horario": "6M1234 (10/02/2025 - 10/12/2025)"
-  },
-  {
-    "anoPeriodo": "2025",
-    "codigo": "APB0377-0",
-    "nome": "PRÁTICAS REPRODUTIVAS EM ANIMAIS DE PRODUÇÃO",
+    "codigo": "APB0323-2",
+    "nome": "FÍSICA",
     "cargaHoraria": "60h",
-    "horario": "3T12 (10/02/2025 - 10/12/2025)"
+    "horario": "2M5 6M4 (10/02/2025 - 10/12/2025)"
   },
   {
     "anoPeriodo": "2025",
-    "codigo": "APB0314-1",
-    "nome": "ZOOTECNIA I",
-    "cargaHoraria": "90h",
-    "horario": "5M45 6M5 (10/02/2025 - 10/12/2025)"
+    "codigo": "APB0307-1",
+    "nome": "FÍSICA",
+    "cargaHoraria": "60h",
+    "horario": "4M1  6T1 (10/02/2025 - 10/12/2025)"
   },
   {
     "anoPeriodo": "2025",
-    "codigo": "APB0314-1",
-    "nome": "ZOOTECNIA I",
-    "cargaHoraria": "90h",
-    "horario": "5M1  2T12 (10/02/2025 - 10/12/2025)"
+    "codigo": "CAB0337-3",
+    "nome": "FÍSICA",
+    "cargaHoraria": "75h",
+    "horario": "2M3 6M2 (10/02/2025 - 10/12/2025)"
   },
   {
     "anoPeriodo": "2025",
-    "codigo": "APB0314-1",
-    "nome": "ZOOTECNIA I",
-    "cargaHoraria": "90h",
-    "horario": "4M5 5M23 (10/02/2025 - 10/12/2025)"
+    "codigo": "CAC0307-1",
+    "nome": "FÍSICA",
+    "cargaHoraria": "60h",
+    "horario": "2M4 4M2"
+  },
+  {
+    "anoPeriodo": "2025",
+    "codigo": "APB0307-1",
+    "nome": "FÍSICA",
+    "cargaHoraria": "60h",
+    "horario": "46M3 (10/02/2025 - 10/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025",
+    "codigo": "HOB0309-1",
+    "nome": "FÍSICA",
+    "cargaHoraria": "60h",
+    "horario": "2M12 (10/02/2025 - 10/12/2025)"
   }
 ]

@@ -4,6 +4,7 @@ const fs = require("fs");
 
 const url = [
   "https://sig.ifc.edu.br/sigaa/public/docente/disciplinas.jsf?siape=1915374",
+  "https://sig.ifc.edu.br/sigaa/public/docente/disciplinas.jsf?siape=1879369"
 ];
 
 const getDisciplinas = async () => {
@@ -42,15 +43,30 @@ const getDisciplinas = async () => {
             });
           }
         });
+        
+       
+
 
         // Leitura do arquivo existente
         fs.readFile("dados.json", "utf8", (err, fileData) => {
           let existingData = [];
-
           if (!err && fileData) {
             existingData = JSON.parse(fileData);
+            console.log("Leitura feita")
           }
+          
+           const backupData = [...existingData]; 
+           const backupDataFile = JSON.stringify(backupData, null, 2);
 
+          fs.writeFile("dadosBackup.json", backupDataFile, (err)=>{
+              if(err){
+                console.log("Erro ao fazer backup");
+              }
+              if(!err){
+                console.log("Backup feito com sucesso");
+              }
+            })
+          existingData=[]
           // Filtrar apenas os itens únicos
           const uniqueData = listJSON.filter(
             (item) =>
