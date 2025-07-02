@@ -96,5 +96,215 @@
     "nome": "FÍSICA",
     "cargaHoraria": "60h",
     "horario": "2M12 (10/02/2025 - 10/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025.1",
+    "codigo": "LPB0357",
+    "nome": "LIBRAS",
+    "cargaHoraria": "60h",
+    "horario": "2N1234 (17/02/2025 - 07/07/2025)"
+  },
+  {
+    "anoPeriodo": "2025",
+    "codigo": "INB0348-0",
+    "nome": "LIBRAS - BÁSICO",
+    "cargaHoraria": "60h",
+    "horario": "4T12 (10/02/2025 - 10/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025",
+    "codigo": "CAB0352-0",
+    "nome": "LIBRAS - BÁSICO",
+    "cargaHoraria": "60h",
+    "horario": "3T34 (10/02/2025 - 10/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025",
+    "codigo": "HOB0359-0",
+    "nome": "LIBRAS - BÁSICO",
+    "cargaHoraria": "60h",
+    "horario": "4T34 (10/02/2025 - 10/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025",
+    "codigo": "HOB0387-0",
+    "nome": "LABORATÓRIO DE FÍSICA E QUÍMICA",
+    "cargaHoraria": "60h",
+    "horario": "4T34"
+  },
+  {
+    "anoPeriodo": "2025",
+    "codigo": "CAC0313-1",
+    "nome": "LABORATÓRIOS DE PRÁTICAS PROFISSIONAIS ORIENTADAS",
+    "cargaHoraria": "240h",
+    "horario": "6M2345  3T1234"
+  },
+  {
+    "anoPeriodo": "2025",
+    "codigo": "CAC0328-2",
+    "nome": "PROJETOS AMBIENTAIS",
+    "cargaHoraria": "120h",
+    "horario": "4M2345"
+  },
+  {
+    "anoPeriodo": "2025",
+    "codigo": "CAC0308-1",
+    "nome": "QUÍMICA",
+    "cargaHoraria": "60h",
+    "horario": "2M3 4M1 (10/02/2025 - 23/03/2025), 2M5 4M1 (24/03/2025 - 23/05/2025),  6T34 (24/05/2025 - 10/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025",
+    "codigo": "CAC0308-1",
+    "nome": "QUÍMICA",
+    "cargaHoraria": "60h",
+    "horario": "2M3 4M1 (10/02/2025 - 23/03/2025), 2M5 4M1 (24/03/2025 - 23/05/2025),  6T34 (24/05/2025 - 10/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025",
+    "codigo": "CAC0308-1",
+    "nome": "QUÍMICA",
+    "cargaHoraria": "60h",
+    "horario": "2M3 4M1 (10/02/2025 - 23/03/2025), 2M5 4M1 (24/03/2025 - 23/05/2025),  6T34 (24/05/2025 - 10/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025",
+    "codigo": "APB0306-1",
+    "nome": "QUÍMICA",
+    "cargaHoraria": "60h",
+    "horario": "2M4 6M1 (10/02/2025 - 18/05/2025), 46M1 (19/05/2025 - 10/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025",
+    "codigo": "APB0306-1",
+    "nome": "QUÍMICA",
+    "cargaHoraria": "60h",
+    "horario": "2M4 6M1 (10/02/2025 - 18/05/2025), 46M1 (19/05/2025 - 10/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025",
+    "codigo": "CAC0359-0",
+    "nome": "QUÍMICA AMBIENTAL",
+    "cargaHoraria": "30h",
+    "horario": "6T12"
+  },
+  {
+    "anoPeriodo": "2025.1",
+    "codigo": "EJAAHSA0308-1",
+    "nome": "PROCESSOS DE APRENDIZAGEM I",
+    "cargaHoraria": "75h",
+    "horario": "6N45 (17/02/2025 - 11/07/2025),  6N45 (28/07/2025 - 28/11/2025)"
+  },
+  {
+    "anoPeriodo": "2025.1",
+    "codigo": "EJAAHSA0317-2",
+    "nome": "PROCESSOS DE APRENDIZAGEM II",
+    "cargaHoraria": "75h",
+    "horario": "4N45 (17/02/2025 - 11/07/2025),  4N45 (28/07/2025 - 28/11/2025)"
+  },
+  {
+    "anoPeriodo": "2025.1",
+    "codigo": "EJAAHSA0318-2",
+    "nome": "PROJETO INTEGRADOR",
+    "cargaHoraria": "75h",
+    "horario": "3N45 (17/02/2025 - 11/07/2025),  3N45 (28/07/2025 - 28/11/2025)"
+  },
+  {
+    "anoPeriodo": "2025.1",
+    "codigo": "LPC0328",
+    "nome": "PESQUISA E PROCESSOS EDUCATIVOS V",
+    "cargaHoraria": "90h",
+    "horario": "6N1234 (21/02/2025 - 11/07/2025)"
+  },
+  {
+    "anoPeriodo": "2025.1",
+    "codigo": "CPA1448",
+    "nome": "REDES DE COMPUTADORES II",
+    "cargaHoraria": "60h",
+    "horario": "4N12 6N45 (17/02/2025 - 07/03/2025),  4N12 6N45 (08/03/2025 - 11/07/2025)"
+  },
+  {
+    "anoPeriodo": "2025.1",
+    "codigo": "MESP",
+    "nome": "SEMINÁRIO DE PESQUISA",
+    "cargaHoraria": "60h",
+    "horario": "2M1234 (07/04/2025 - 14/04/2025), 2M1234 (28/04/2025 - 02/06/2025), 2M1234 (16/06/2025 - 16/06/2025), 2M1234  2T1234 (23/06/2025 - 07/07/2025)"
+  },
+  {
+    "anoPeriodo": "2025",
+    "codigo": "INB1413-1",
+    "nome": "FUNDAMENTOS DE INFORMÁTICA",
+    "cargaHoraria": "60h",
+    "horario": "3M12 (17/02/2025 - 19/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025",
+    "codigo": "INB1413-1",
+    "nome": "FUNDAMENTOS DE INFORMÁTICA",
+    "cargaHoraria": "60h",
+    "horario": "3T34 (17/02/2025 - 19/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025",
+    "codigo": "INB1414-1",
+    "nome": "HARDWARE E SISTEMAS OPERACIONAIS",
+    "cargaHoraria": "120h",
+    "horario": "5M56  5T34 (17/02/2025 - 19/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025",
+    "codigo": "INB1414-1",
+    "nome": "HARDWARE E SISTEMAS OPERACIONAIS",
+    "cargaHoraria": "120h",
+    "horario": "5M34  5T12 (17/02/2025 - 19/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025",
+    "codigo": "INB1431-2",
+    "nome": "REDES",
+    "cargaHoraria": "60h",
+    "horario": "6T23 (17/02/2025 - 19/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025.1",
+    "codigo": "AGB0322",
+    "nome": "MICROBIOLOGIA AGRÍCOLA",
+    "cargaHoraria": "60h",
+    "horario": "35M45 (17/02/2025 - 04/07/2025)"
+  },
+  {
+    "anoPeriodo": "2025",
+    "codigo": "APB0324-2",
+    "nome": "BIOLOGIA",
+    "cargaHoraria": "60h",
+    "horario": "2T34 (10/02/2025 - 10/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025",
+    "codigo": "APB0324-2",
+    "nome": "BIOLOGIA",
+    "cargaHoraria": "60h",
+    "horario": "4T34 (10/02/2025 - 10/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025",
+    "codigo": "APB0324-2",
+    "nome": "BIOLOGIA",
+    "cargaHoraria": "60h",
+    "horario": "3T34 (10/02/2025 - 10/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025",
+    "codigo": "HOB0345-3",
+    "nome": "BIOLOGIA",
+    "cargaHoraria": "60h",
+    "horario": "3T12 (10/02/2025 - 10/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025",
+    "codigo": "HOB0345-3",
+    "nome": "BIOLOGIA",
+    "cargaHoraria": "60h",
+    "horario": "2T12 (10/02/2025 - 10/12/2025)"
   }
 ]
