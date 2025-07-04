@@ -62,9 +62,11 @@ const getDisciplinas = async () => {
       const $ = cheerio.load(data);
 
       let anoAtual = null;
+      let nome=null
       $("#corpo #center #id-docente").each((i,element)=>{
-        const nome = $(element).find("h3").text().trim();
+        nome=$(element).find("h3").text().trim();
       } )
+
       console.log(nome);
       $("table.listagem tbody tr").each((i, element) => {
         const tdAno = $(element).find("td.anoPeriodo");
@@ -73,11 +75,11 @@ const getDisciplinas = async () => {
           return;
         }
         const codigo = $(element).find("td.codigo").text().trim();
-        const turma = $(element).find("td:nth-child(2) a").text().trim();
+        const materia = $(element).find("td:nth-child(2) a").text().trim();
         const cargaHoraria = $(element).find("td.ch").text().trim();
         const horario = $(element).find("td.horario").text().trim();
 
-        const verificacaoCampos = codigo && turma && cargaHoraria && horario && anoAtual && nome ;
+        const verificacaoCampos = codigo && materia && cargaHoraria && horario && anoAtual && nome ;
         const verificacaoAno = anoAtual.startsWith("2025");
 
         if (verificacaoCampos && verificacaoAno) {
@@ -85,7 +87,7 @@ const getDisciplinas = async () => {
             anoPeriodo: anoAtual,
             codigo,
             nome,
-            turma,
+            materia,
             cargaHoraria,
             horario,
           });
