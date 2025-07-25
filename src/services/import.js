@@ -1,23 +1,27 @@
 const {PrismaClient}=require('@prisma/client')
 const fs=require("fs");
 
-async function importacao() {
-   const data=JSON.parse(fs.readFileSync("data.json","utf-8"))
+const prisma = new PrismaClient()
 
-   for(const Prof of data){
+async function importacao() {
+   const data=JSON.parse(fs.readFileSync("dados.json","utf-8"))
+
+   for(const professor of data){
       try{
-         await Prisma.professor.create({
+         await prisma.professor.create({
             data:professor
          })
       }
       catch(err){
-         console.log('Erro ao importar ${err.message}')
-      }
+         console.error(`❌ Erro durante o processo: ${err.message}`);
+  }
    }
-   //terminar a importacao usando chat gpt 
 }
 
-main()
+importacao()
+   .catch((e) =>{
+   console.log(e)
+   })
    .finally(async()=>{
       await prisma.$disconnect();
    })

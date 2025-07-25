@@ -74,18 +74,18 @@ const getDisciplinas = async () => {
           anoAtual = tdAno.text().trim();
           return;
         }
-        const codigo = $(element).find("td.codigo").text().trim();
+        const codigoMateria = $(element).find("td.codigo").text().trim();
         const materia = $(element).find("td:nth-child(2) a").text().trim();
         const cargaHoraria = $(element).find("td.ch").text().trim();
         const horario = $(element).find("td.horario").text().trim();
 
-        const verificacaoCampos = codigo && materia && cargaHoraria && horario && anoAtual && nome ;
+        const verificacaoCampos = codigoMateria && materia && cargaHoraria && horario && anoAtual && nome ;
         const verificacaoAno = anoAtual.startsWith("2025");
 
         if (verificacaoCampos && verificacaoAno) {
           listJSON.push({
             anoPeriodo: anoAtual,
-            codigo,
+            codigoMateria,
             nome,
             materia,
             cargaHoraria,
@@ -104,7 +104,7 @@ const getDisciplinas = async () => {
       (item) =>
         !existingData.some(
           (existingItem) =>
-            existingItem.codigo === item.codigo &&
+            existingItem.codigoMateria === item.codigoMateria &&
             existingItem.anoPeriodo === item.anoPeriodo
         )
     );
