@@ -63,12 +63,12 @@ const getDisciplinas = async () => {
 
       let anoAtual = null;
       let nome=null
-      $("#corpo #center #id-docente").each((i,element)=>{
+      $("#corpo #center #id-docente").each((element)=>{
         nome=$(element).find("h3").text().trim();
       } )
 
       console.log(nome);
-      $("table.listagem tbody tr").each((i, element) => {
+      $("table.listagem tbody tr").each((element) => {
         const tdAno = $(element).find("td.anoPeriodo");
         if (tdAno.length) {
           anoAtual = tdAno.text().trim();
@@ -131,3 +131,4 @@ const getDisciplinas = async () => {
 };
 
 getDisciplinas();
+module.exports={ARQUIVO_BACKUP,ARQUIVO_DADOS,listJSON,axios,cheerio,fs,error,$,data,item,verificacaoAno,verificacaoCampos,anoAtual}
