@@ -125,68 +125,71 @@ void async function () {
     renderizarResultados();
 
     inputSearch.focus();
-}();
-
-
-// const btn = document.getElementById("myBtn");
-// Funções relacionadas ao modal
-const modal = document.querySelector("#myModal");
-
-//const btn = document.querySelector("#myBtn");
-//chupa btn de merda;seu coco
-
-// const span = document.getElementsByClassName("close")[0];
-// vai toma no seu cú, para de usar getElementByClasseName
-// getElementById ou qualquer bosta dessas, o professor
-// ensinou a usar a porra do querySelector usa esta merda
-const span = document.querySelector(".close");
-
-
-
-span.onclick = function () {
-    modal.style.display = "none";
-    // modal.classList.remove("open")
-}
-
-
-/* --------------------------------------------------Querido, Isaac. Acredito que a função abaixo não estava fazendo absolutamente nada alem de dar erro no codigo
-window.onclick = function (event) {
-  if(ev.target ===modal){
-    modal.style.display = "none"
-  }
-}*/
-
-
-// Corrigir a referência ao modal na função `pessoa.onclick`
-document.addEventListener('click', function (event) {
-    if (event.target.id === 'pessoa') {
-        modal.style.display = "block";
+    
+    
+    // const btn = document.getElementById("myBtn");
+    // Funções relacionadas ao modal
+    const modal = document.querySelector("#myModal");
+    
+    //const btn = document.querySelector("#myBtn");
+    //chupa btn de merda;seu coco
+    
+    // const span = document.getElementsByClassName("close")[0];
+    // vai toma no seu cú, para de usar getElementByClasseName
+    // getElementById ou qualquer bosta dessas, o professor
+    // ensinou a usar a porra do querySelector usa esta merda
+    const span = document.querySelector(".close");
+    
+    
+    
+    span.onclick = function () {
+        modal.style.display = "none";
+        // modal.classList.remove("open")
     }
-});
-
-// Função pro modo escuro (E daqui pra frente o código vira uma trincheira)
-function Escurecer(){
-    if(this.checked == true){
-        document.body.style.backgroundColor="rgb(41, 41, 54)";
-        document.body.style.color="rgb(236, 236, 236)";
-        searchinput.style.backgroundColor="rgb(50, 50, 60)";
-        searchinput.style.color="rgb(236, 236, 236)";
-        modalc.style.color="rgb(236, 236, 236)";
-        modalc.style.backgroundColor="rgb(41, 41, 54)";
-        close_.style.color="rgb(236, 236, 236)";
-    }
-    if(this.checked == false){
-        document.body.style.backgroundColor="rgb(236, 236, 236)";
-        document.body.style.color="rgb(41, 41, 54)";
-        searchinput.style.backgroundColor="white";
-        searchinput.style.color="black";
-        modalc.style.color="black";
-        modalc.style.backgroundColor="rgb(236, 236, 236)";
-        close_.style.color="rgb(41, 41, 54)";
-    }
-}
-
-document.querySelector(".alanjesus").addEventListener('change', Escurecer);
-
-
-
+    
+    
+    /* --------------------------------------------------Querido, Isaac. Acredito que a função abaixo não estava fazendo absolutamente nada alem de dar erro no codigo
+    window.onclick = function (event) {
+        if(ev.target ===modal){
+            modal.style.display = "none"
+            }
+            }*/
+           
+           
+           // Corrigir a referência ao modal na função `pessoa.onclick`
+           document.addEventListener('click', function (event) {
+               if (event.target.id === 'pessoa') {
+                   modal.style.display = "block";
+                }
+            });
+            
+            // Função pro modo escuro (E daqui pra frente o código vira uma trincheira)
+            function Escurecer(){
+                if(this.checked == true){
+                    document.body.style.backgroundColor="rgb(41, 41, 54)";
+                    document.body.style.color="rgb(236, 236, 236)";
+                    searchinput.style.backgroundColor="rgb(50, 50, 60)";
+                    searchinput.style.color="rgb(236, 236, 236)";
+                    modalc.style.color="rgb(236, 236, 236)";
+                    modalc.style.backgroundColor="rgb(41, 41, 54)";
+                    close_.style.color="rgb(236, 236, 236)";
+                    mostradorPagina.style.color = "rgb(236, 236, 236)"; // <-- Adicione esta linha
+                }
+                if(this.checked == false){
+                    document.body.style.backgroundColor="rgb(236, 236, 236)";
+                    document.body.style.color="rgb(41, 41, 54)";
+                    searchinput.style.backgroundColor="white";
+                    searchinput.style.color="black";
+                    modalc.style.color="black";
+                    modalc.style.backgroundColor="rgb(236, 236, 236)";
+                    close_.style.color="rgb(41, 41, 54)";
+                    mostradorPagina.style.color = "black"; // <-- Adicione esta linha
+                }
+            }
+            
+            document.querySelector(".alanjesus").addEventListener('change', Escurecer);
+            
+            
+            
+            
+        }();
