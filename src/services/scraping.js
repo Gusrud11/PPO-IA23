@@ -1,7 +1,6 @@
-const axios = require("axios");
-const cheerio = require("cheerio");
-const { error } = require("console");
-const fs = require("fs").promises;
+import axios from "axios";
+import * as cheerio from "cheerio";
+import fs from "fs/promises";
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 //Quadro Docente: https://www.camboriu.ifc.edu.br/quadro-docente-2025-1/
 // URLs a serem raspadas
@@ -63,12 +62,12 @@ const getDisciplinas = async () => {
 
       let anoAtual = null;
       let nome=null
-      $("#corpo #center #id-docente").each((element)=>{
-        nome=$(element).find("h3").text().trim();
-      } )
+      $("#corpo #center #id-docente").each((index, element) => {
+        nome = $(element).find("h3").text().trim();
+      });
 
       console.log(nome);
-      $("table.listagem tbody tr").each((element) => {
+      $("table.listagem tbody tr").each((index, element) => {
         const tdAno = $(element).find("td.anoPeriodo");
         if (tdAno.length) {
           anoAtual = tdAno.text().trim();
@@ -80,7 +79,7 @@ const getDisciplinas = async () => {
         const horario = $(element).find("td.horario").text().trim();
 
         const verificacaoCampos = codigoMateria && materia && cargaHoraria && horario && anoAtual && nome ;
-        const verificacaoAno = anoAtual.startsWith("2025");
+        const verificacaoAno = anoAtual && anoAtual.startsWith("2025");
 
         if (verificacaoCampos && verificacaoAno) {
           listJSON.push({
@@ -131,4 +130,3 @@ const getDisciplinas = async () => {
 };
 
 getDisciplinas();
-module.exports={ARQUIVO_BACKUP,ARQUIVO_DADOS,listJSON,axios,cheerio,fs,error,$,data,item,verificacaoAno,verificacaoCampos,anoAtual}

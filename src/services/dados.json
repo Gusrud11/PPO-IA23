@@ -374,5 +374,53 @@
     "turma": "MATEMÁTICA",
     "cargaHoraria": "90h",
     "horario": "3M23 4M4 (10/02/2025 - 24/02/2025),  3T12 6T4 (25/02/2025 - 10/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025.2",
+    "codigoMateria": "NIC0342",
+    "nome": "afonso da luz loss",
+    "materia": "LÍNGUA BRASILEIRA DE SINAIS - LIBRAS",
+    "cargaHoraria": "30h",
+    "horario": "5N12 (31/07/2025 - 04/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025.2",
+    "codigoMateria": "TISB0325-3",
+    "nome": "afonso da luz loss",
+    "materia": "LIBRAS",
+    "cargaHoraria": "30h",
+    "horario": "5N56 (28/07/2025 - 06/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025.2",
+    "codigoMateria": "LPB0363",
+    "nome": "airton zancanaro",
+    "materia": "PESQUISA E PROCESSOS EDUCATIVOS VIII",
+    "cargaHoraria": "30h",
+    "horario": "4N34 (28/07/2025 - 03/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025.2",
+    "codigoMateria": "LPB0364",
+    "nome": "airton zancanaro",
+    "materia": "TECNOLOGIAS DA INFORMAÇÃO E COMUNICAÇÃO EM EDUCAÇÃO",
+    "cargaHoraria": "60h",
+    "horario": "6N1234 (28/07/2025 - 03/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025.2",
+    "codigoMateria": "SAIAAPA",
+    "nome": "airton zancanaro",
+    "materia": "SEMINÁRIO AVANÇADO - INTELIGENCIA ARTIFICIAL APLICADA A PESQUISA ACADÊMICA",
+    "cargaHoraria": "30h",
+    "horario": "2M1234 (25/08/2025 - 25/08/2025), 2M1234 (08/09/2025 - 08/09/2025), 2M1234 (22/09/2025 - 22/09/2025), 2M1234 (06/10/2025 - 06/10/2025), 2M1234 (20/10/2025 - 20/10/2025), 2M1234 (03/11/2025 - 03/11/2025), 2M1234 (17/11/2025 - 17/11/2025), 2M1234 (01/12/2025 - 01/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025.2",
+    "codigoMateria": "PGPSA0012",
+    "nome": "alessandra farias millezi",
+    "materia": "LABORATÓRIO DE PRÁTICAS DE MICROBIOLOGIA",
+    "cargaHoraria": "30h",
+    "horario": "67M1234  6T1234 7T123 (12/09/2025 - 13/09/2025), 67M1234  6T1234 7T123 (17/10/2025 - 18/10/2025)"
   }
 ]
