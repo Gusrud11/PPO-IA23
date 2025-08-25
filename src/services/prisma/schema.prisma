@@ -16,11 +16,11 @@ datasource db {
 
 model Professor{
   id Int @id @default(autoincrement())
-  nome String
   anoPeriodo String
-  turma String
+  nome String
+  materia String
   cargaHoraria String
   codigoMateria String
   horario String
-  email String
+  // email String
 }

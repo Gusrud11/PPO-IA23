@@ -422,5 +422,93 @@
     "materia": "LABORATÓRIO DE PRÁTICAS DE MICROBIOLOGIA",
     "cargaHoraria": "30h",
     "horario": "67M1234  6T1234 7T123 (12/09/2025 - 13/09/2025), 67M1234  6T1234 7T123 (17/10/2025 - 18/10/2025)"
+  },
+  {
+    "anoPeriodo": "2025.2",
+    "codigoMateria": "AGB0313",
+    "nome": "allan charlles mendes de sousa",
+    "materia": "GÊNESE E CLASSIFICAÇÃO DOS SOLOS",
+    "cargaHoraria": "75h",
+    "horario": "4M45 6M123 (28/07/2025 - 05/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025.2",
+    "codigoMateria": "AGB0329",
+    "nome": "allan charlles mendes de sousa",
+    "materia": "QUÍMICA E FERTILIDADE DO SOLO",
+    "cargaHoraria": "60h",
+    "horario": "56M45 (28/07/2025 - 05/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025.1",
+    "codigoMateria": "AGB0303",
+    "nome": "allan charlles mendes de sousa",
+    "materia": "DESENHO TÉCNICO",
+    "cargaHoraria": "30h",
+    "horario": "4M45 (24/02/2025 - 04/07/2025)"
+  },
+  {
+    "anoPeriodo": "2025.1",
+    "codigoMateria": "AGB0305",
+    "nome": "allan charlles mendes de sousa",
+    "materia": "INTRODUÇÃO À AGRONOMIA",
+    "cargaHoraria": "30h",
+    "horario": "6M23 (24/02/2025 - 04/07/2025)"
+  },
+  {
+    "anoPeriodo": "2025.1",
+    "codigoMateria": "AGB0305",
+    "nome": "allan charlles mendes de sousa",
+    "materia": "INTRODUÇÃO À AGRONOMIA",
+    "cargaHoraria": "30h",
+    "horario": "-"
+  },
+  {
+    "anoPeriodo": "2025.1",
+    "codigoMateria": "AGA0352",
+    "nome": "allan charlles mendes de sousa",
+    "materia": "USO, MANEJO E CONSERVAÇÃO DO SOLO",
+    "cargaHoraria": "45h",
+    "horario": "4T123 (17/02/2025 - 04/07/2025)"
+  },
+  {
+    "anoPeriodo": "2025",
+    "codigoMateria": "APB0313-1",
+    "nome": "allan charlles mendes de sousa",
+    "materia": "AGRICULTURA I",
+    "cargaHoraria": "90h",
+    "horario": "4M3 5M23 (10/02/2025 - 12/07/2025), 5M12 6M4 (13/07/2025 - 10/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025",
+    "codigoMateria": "APB0313-1",
+    "nome": "allan charlles mendes de sousa",
+    "materia": "AGRICULTURA I",
+    "cargaHoraria": "90h",
+    "horario": "5M5 6M45 (10/02/2025 - 12/07/2025), 4M3 6M12 (13/07/2025 - 10/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025",
+    "codigoMateria": "APB0313-1",
+    "nome": "allan charlles mendes de sousa",
+    "materia": "AGRICULTURA I",
+    "cargaHoraria": "90h",
+    "horario": "5M1  3T12 (10/02/2025 - 12/07/2025), 4M45 6M3 (13/07/2025 - 10/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025",
+    "codigoMateria": "APB0315-1",
+    "nome": "allan charlles mendes de sousa",
+    "materia": "DESENHO TÉCNICO E CONSTRUÇÕES RURAIS",
+    "cargaHoraria": "90h",
+    "horario": "5M4  6T34 (10/02/2025 - 12/07/2025), 5M1  6T12 (13/07/2025 - 10/12/2025)"
+  },
+  {
+    "anoPeriodo": "2025",
+    "codigoMateria": "APB0315-1",
+    "nome": "allan charlles mendes de sousa",
+    "materia": "DESENHO TÉCNICO E CONSTRUÇÕES RURAIS",
+    "cargaHoraria": "90h",
+    "horario": "4M12 6M1 (10/02/2025 - 12/07/2025), 4M12 5M3 (13/07/2025 - 10/12/2025)"
   }
 ]

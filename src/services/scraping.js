@@ -12,6 +12,9 @@ const urls = [
   "https://sig.ifc.edu.br/sigaa/public/docente/disciplinas.jsf?siape=2322799",//airton zancanaro
   "https://sig.ifc.edu.br/sigaa/public/docente/disciplinas.jsf?siape=1989957",//alessandra farias millezi
   "https://sig.ifc.edu.br/sigaa/public/docente/disciplinas.jsf?siape=3449477",//alessandra heidrich
+  "https://sig.ifc.edu.br/sigaa/public/docente/disciplinas.jsf?siape=2046449",//alexandre de aguiar amaral
+  "https://sig.ifc.edu.br/sigaa/public/docente/disciplinas.jsf?siape=2276418",//allan charlles mendes de sousa
+  
 ];
 console.log(urls.length);
 // Caminhos dos arquivos
