@@ -87,11 +87,9 @@ const getDisciplinas = async () => {
         if (verificacaoCampos && verificacaoAno) {
           listJSON.push({
             anoPeriodo: anoAtual,
-            codigoMateria,
             nome,
             materia,
-            cargaHoraria,
-            horario,
+           
           });
         }
       });

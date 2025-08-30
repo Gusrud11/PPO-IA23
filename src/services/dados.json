@@ -1,514 +1,332 @@
 [
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "APB0323-2",
     "nome": "adriana botelho barcellos",
-    "turma": "FÍSICA",
-    "cargaHoraria": "60h",
-    "horario": "2M5 6M4 (10/02/2025 - 10/12/2025)"
+    "materia": "FÍSICA"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "APB0307-1",
     "nome": "adriana botelho barcellos",
-    "turma": "FÍSICA",
-    "cargaHoraria": "60h",
-    "horario": "4M1  6T1 (10/02/2025 - 10/12/2025)"
+    "materia": "FÍSICA"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "CAB0337-3",
     "nome": "adriana botelho barcellos",
-    "turma": "FÍSICA",
-    "cargaHoraria": "75h",
-    "horario": "2M3 6M2 (10/02/2025 - 10/12/2025)"
+    "materia": "FÍSICA"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "CAC0307-1",
     "nome": "adriana botelho barcellos",
-    "turma": "FÍSICA",
-    "cargaHoraria": "60h",
-    "horario": "2M4 4M2"
+    "materia": "FÍSICA"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "APB0307-1",
     "nome": "adriana botelho barcellos",
-    "turma": "FÍSICA",
-    "cargaHoraria": "60h",
-    "horario": "46M3 (10/02/2025 - 10/12/2025)"
+    "materia": "FÍSICA"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "HOB0309-1",
     "nome": "adriana botelho barcellos",
-    "turma": "FÍSICA",
-    "cargaHoraria": "60h",
-    "horario": "2M12 (10/02/2025 - 10/12/2025)"
+    "materia": "FÍSICA"
+  },
+  {
+    "anoPeriodo": "2025",
+    "nome": "adriana botelho barcellos",
+    "materia": "FÍSICA"
   },
   {
     "anoPeriodo": "2025.2",
-    "codigoMateria": "LMD0355",
     "nome": "afonso da luz loss",
-    "turma": "LIBRAS",
-    "cargaHoraria": "60h",
-    "horario": "4N1234 (28/07/2025 - 05/12/2025)"
+    "materia": "LIBRAS"
+  },
+  {
+    "anoPeriodo": "2025.2",
+    "nome": "afonso da luz loss",
+    "materia": "LÍNGUA BRASILEIRA DE SINAIS - LIBRAS"
   },
   {
     "anoPeriodo": "2025.1",
-    "codigoMateria": "LPB0357",
     "nome": "afonso da luz loss",
-    "turma": "LIBRAS",
-    "cargaHoraria": "60h",
-    "horario": "2N1234 (17/02/2025 - 07/07/2025)"
+    "materia": "LIBRAS"
   },
   {
-    "anoPeriodo": "2025",
-    "codigoMateria": "INB0348-0",
+    "anoPeriodo": "2025.2",
     "nome": "afonso da luz loss",
-    "turma": "LIBRAS - BÁSICO",
-    "cargaHoraria": "60h",
-    "horario": "4T12 (10/02/2025 - 10/12/2025)"
+    "materia": "LIBRAS"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "CAB0352-0",
     "nome": "afonso da luz loss",
-    "turma": "LIBRAS - BÁSICO",
-    "cargaHoraria": "60h",
-    "horario": "3T34 (10/02/2025 - 10/12/2025)"
+    "materia": "LIBRAS - BÁSICO"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "HOB0359-0",
     "nome": "afonso da luz loss",
-    "turma": "LIBRAS - BÁSICO",
-    "cargaHoraria": "60h",
-    "horario": "4T34 (10/02/2025 - 10/12/2025)"
+    "materia": "LIBRAS - BÁSICO"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "HOB0387-0",
-    "nome": "adriano martendal",
-    "turma": "LABORATÓRIO DE FÍSICA E QUÍMICA",
-    "cargaHoraria": "60h",
-    "horario": "4T34"
+    "nome": "afonso da luz loss",
+    "materia": "LIBRAS - BÁSICO"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "CAC0313-1",
     "nome": "adriano martendal",
-    "turma": "LABORATÓRIOS DE PRÁTICAS PROFISSIONAIS ORIENTADAS",
-    "cargaHoraria": "240h",
-    "horario": "6M2345  3T1234"
+    "materia": "LABORATÓRIO DE FÍSICA E QUÍMICA"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "CAC0328-2",
     "nome": "adriano martendal",
-    "turma": "PROJETOS AMBIENTAIS",
-    "cargaHoraria": "120h",
-    "horario": "4M2345"
+    "materia": "LABORATÓRIOS DE PRÁTICAS PROFISSIONAIS ORIENTADAS"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "CAC0308-1",
     "nome": "adriano martendal",
-    "turma": "QUÍMICA",
-    "cargaHoraria": "60h",
-    "horario": "2M3 4M1 (10/02/2025 - 23/03/2025), 2M5 4M1 (24/03/2025 - 23/05/2025),  6T34 (24/05/2025 - 10/12/2025)"
+    "materia": "PROJETOS AMBIENTAIS"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "CAC0308-1",
     "nome": "adriano martendal",
-    "turma": "QUÍMICA",
-    "cargaHoraria": "60h",
-    "horario": "2M3 4M1 (10/02/2025 - 23/03/2025), 2M5 4M1 (24/03/2025 - 23/05/2025),  6T34 (24/05/2025 - 10/12/2025)"
+    "materia": "QUÍMICA"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "CAC0308-1",
     "nome": "adriano martendal",
-    "turma": "QUÍMICA",
-    "cargaHoraria": "60h",
-    "horario": "2M3 4M1 (10/02/2025 - 23/03/2025), 2M5 4M1 (24/03/2025 - 23/05/2025),  6T34 (24/05/2025 - 10/12/2025)"
+    "materia": "QUÍMICA"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "APB0306-1",
     "nome": "adriano martendal",
-    "turma": "QUÍMICA",
-    "cargaHoraria": "60h",
-    "horario": "2M4 6M1 (10/02/2025 - 18/05/2025), 46M1 (19/05/2025 - 10/12/2025)"
+    "materia": "QUÍMICA"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "APB0306-1",
     "nome": "adriano martendal",
-    "turma": "QUÍMICA",
-    "cargaHoraria": "60h",
-    "horario": "2M4 6M1 (10/02/2025 - 18/05/2025), 46M1 (19/05/2025 - 10/12/2025)"
+    "materia": "QUÍMICA"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "CAC0359-0",
     "nome": "adriano martendal",
-    "turma": "QUÍMICA AMBIENTAL",
-    "cargaHoraria": "30h",
-    "horario": "6T12"
+    "materia": "QUÍMICA AMBIENTAL"
   },
   {
     "anoPeriodo": "2025.1",
-    "codigoMateria": "EJAAHSA0308-1",
     "nome": "agata regiane quissini",
-    "turma": "PROCESSOS DE APRENDIZAGEM I",
-    "cargaHoraria": "75h",
-    "horario": "6N45 (17/02/2025 - 11/07/2025),  6N45 (28/07/2025 - 28/11/2025)"
+    "materia": "PROCESSOS DE APRENDIZAGEM I"
   },
   {
     "anoPeriodo": "2025.1",
-    "codigoMateria": "EJAAHSA0317-2",
     "nome": "agata regiane quissini",
-    "turma": "PROCESSOS DE APRENDIZAGEM II",
-    "cargaHoraria": "75h",
-    "horario": "4N45 (17/02/2025 - 11/07/2025),  4N45 (28/07/2025 - 28/11/2025)"
+    "materia": "PROCESSOS DE APRENDIZAGEM II"
   },
   {
     "anoPeriodo": "2025.1",
-    "codigoMateria": "EJAAHSA0318-2",
     "nome": "agata regiane quissini",
-    "turma": "PROJETO INTEGRADOR",
-    "cargaHoraria": "75h",
-    "horario": "3N45 (17/02/2025 - 11/07/2025),  3N45 (28/07/2025 - 28/11/2025)"
+    "materia": "PROJETO INTEGRADOR"
   },
   {
     "anoPeriodo": "2025.2",
-    "codigoMateria": "LPC0333",
     "nome": "airton zancanaro",
-    "turma": "PESQUISA E PROCESSOS EDUCATIVOS VI",
-    "cargaHoraria": "90h",
-    "horario": "5N1234 (28/07/2025 - 03/12/2025)"
+    "materia": "PESQUISA E PROCESSOS EDUCATIVOS VI"
   },
   {
     "anoPeriodo": "2025.2",
-    "codigoMateria": "LPC0345",
     "nome": "airton zancanaro",
-    "turma": "TECNOLOGIAS DIGITAIS DA INFORMAÇÃO E COMUNICAÇÃO NA EDUCAÇÃO",
-    "cargaHoraria": "60h",
-    "horario": "6N1234 (28/07/2025 - 03/12/2025)"
+    "materia": "PESQUISA E PROCESSOS EDUCATIVOS VIII"
+  },
+  {
+    "anoPeriodo": "2025.2",
+    "nome": "airton zancanaro",
+    "materia": "TECNOLOGIAS DA INFORMAÇÃO E COMUNICAÇÃO EM EDUCAÇÃO"
   },
   {
     "anoPeriodo": "2025.1",
-    "codigoMateria": "LPC0328",
     "nome": "airton zancanaro",
-    "turma": "PESQUISA E PROCESSOS EDUCATIVOS V",
-    "cargaHoraria": "90h",
-    "horario": "6N1234 (21/02/2025 - 11/07/2025)"
+    "materia": "PESQUISA E PROCESSOS EDUCATIVOS V"
   },
   {
     "anoPeriodo": "2025.1",
-    "codigoMateria": "CPA1448",
     "nome": "airton zancanaro",
-    "turma": "REDES DE COMPUTADORES II",
-    "cargaHoraria": "60h",
-    "horario": "4N12 6N45 (17/02/2025 - 07/03/2025),  4N12 6N45 (08/03/2025 - 11/07/2025)"
+    "materia": "REDES DE COMPUTADORES II"
+  },
+  {
+    "anoPeriodo": "2025.2",
+    "nome": "airton zancanaro",
+    "materia": "SEMINÁRIO AVANÇADO - INTELIGENCIA ARTIFICIAL APLICADA A PESQUISA ACADÊMICA"
   },
   {
     "anoPeriodo": "2025.1",
-    "codigoMateria": "MESP",
     "nome": "airton zancanaro",
-    "turma": "SEMINÁRIO DE PESQUISA",
-    "cargaHoraria": "60h",
-    "horario": "2M1234 (07/04/2025 - 14/04/2025), 2M1234 (28/04/2025 - 02/06/2025), 2M1234 (16/06/2025 - 16/06/2025), 2M1234  2T1234 (23/06/2025 - 07/07/2025)"
+    "materia": "SEMINÁRIO DE PESQUISA"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "INB1413-1",
     "nome": "airton zancanaro",
-    "turma": "FUNDAMENTOS DE INFORMÁTICA",
-    "cargaHoraria": "60h",
-    "horario": "3M12 (17/02/2025 - 19/12/2025)"
+    "materia": "FUNDAMENTOS DE INFORMÁTICA"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "INB1413-1",
     "nome": "airton zancanaro",
-    "turma": "FUNDAMENTOS DE INFORMÁTICA",
-    "cargaHoraria": "60h",
-    "horario": "3T34 (17/02/2025 - 19/12/2025)"
+    "materia": "FUNDAMENTOS DE INFORMÁTICA"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "INB1414-1",
     "nome": "airton zancanaro",
-    "turma": "HARDWARE E SISTEMAS OPERACIONAIS",
-    "cargaHoraria": "120h",
-    "horario": "5M56  5T34 (17/02/2025 - 19/12/2025)"
+    "materia": "HARDWARE E SISTEMAS OPERACIONAIS"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "INB1414-1",
     "nome": "airton zancanaro",
-    "turma": "HARDWARE E SISTEMAS OPERACIONAIS",
-    "cargaHoraria": "120h",
-    "horario": "5M34  5T12 (17/02/2025 - 19/12/2025)"
+    "materia": "HARDWARE E SISTEMAS OPERACIONAIS"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "INB1431-2",
     "nome": "airton zancanaro",
-    "turma": "REDES",
-    "cargaHoraria": "60h",
-    "horario": "6T23 (17/02/2025 - 19/12/2025)"
+    "materia": "REDES"
   },
   {
     "anoPeriodo": "2025.1",
-    "codigoMateria": "AGB0322",
     "nome": "alessandra farias millezi",
-    "turma": "MICROBIOLOGIA AGRÍCOLA",
-    "cargaHoraria": "60h",
-    "horario": "35M45 (17/02/2025 - 04/07/2025)"
+    "materia": "MICROBIOLOGIA AGRÍCOLA"
   },
   {
-    "anoPeriodo": "2025",
-    "codigoMateria": "APB0324-2",
+    "anoPeriodo": "2025.2",
     "nome": "alessandra farias millezi",
-    "turma": "BIOLOGIA",
-    "cargaHoraria": "60h",
-    "horario": "2T34 (10/02/2025 - 10/12/2025)"
+    "materia": "LABORATÓRIO DE PRÁTICAS DE MICROBIOLOGIA"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "APB0324-2",
     "nome": "alessandra farias millezi",
-    "turma": "BIOLOGIA",
-    "cargaHoraria": "60h",
-    "horario": "4T34 (10/02/2025 - 10/12/2025)"
+    "materia": "BIOLOGIA"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "APB0324-2",
     "nome": "alessandra farias millezi",
-    "turma": "BIOLOGIA",
-    "cargaHoraria": "60h",
-    "horario": "3T34 (10/02/2025 - 10/12/2025)"
+    "materia": "BIOLOGIA"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "HOB0345-3",
     "nome": "alessandra farias millezi",
-    "turma": "BIOLOGIA",
-    "cargaHoraria": "60h",
-    "horario": "3T12 (10/02/2025 - 10/12/2025)"
+    "materia": "BIOLOGIA"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "HOB0345-3",
     "nome": "alessandra farias millezi",
-    "turma": "BIOLOGIA",
-    "cargaHoraria": "60h",
-    "horario": "2T12 (10/02/2025 - 10/12/2025)"
-  },
-  {
-    "anoPeriodo": "2025.2",
-    "codigoMateria": "LMD0313",
-    "nome": "alessandra heidrich",
-    "turma": "MATEMÁTICA FUNDAMENTAL II",
-    "cargaHoraria": "90h",
-    "horario": "5N34 6N1234 (28/07/2025 - 05/12/2025)"
+    "materia": "BIOLOGIA"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "CAB0336-3",
-    "nome": "alessandra heidrich",
-    "turma": "MATEMÁTICA",
-    "cargaHoraria": "75h",
-    "horario": "2M45 (10/02/2025 - 10/12/2025)"
-  },
-  {
-    "anoPeriodo": "2025",
-    "codigoMateria": "CAC0321-2",
-    "nome": "alessandra heidrich",
-    "turma": "MATEMÁTICA",
-    "cargaHoraria": "90h",
-    "horario": "2T4 4T12"
-  },
-  {
-    "anoPeriodo": "2025",
-    "codigoMateria": "CAC0306-1",
-    "nome": "alessandra heidrich",
-    "turma": "MATEMÁTICA",
-    "cargaHoraria": "60h",
-    "horario": "2T12 (10/02/2025 - 10/12/2025)"
-  },
-  {
-    "anoPeriodo": "2025",
-    "codigoMateria": "APB0334-3",
-    "nome": "alessandra heidrich",
-    "turma": "MATEMÁTICA",
-    "cargaHoraria": "90h",
-    "horario": "3T34 6T3 (10/02/2025 - 10/12/2025)"
-  },
-  {
-    "anoPeriodo": "2025",
-    "codigoMateria": "APB0305-1",
-    "nome": "alessandra heidrich",
-    "turma": "MATEMÁTICA",
-    "cargaHoraria": "90h",
-    "horario": "4M3  2T34 (10/02/2025 - 23/02/2025),  2T3 6T12 (24/02/2025 - 10/12/2025)"
-  },
-  {
-    "anoPeriodo": "2025",
-    "codigoMateria": "APB0305-1",
-    "nome": "alessandra heidrich",
-    "turma": "MATEMÁTICA",
-    "cargaHoraria": "90h",
-    "horario": "3M1  4T12 (10/02/2025 - 23/02/2025), 2M1  4T34 (24/02/2025 - 10/12/2025)"
-  },
-  {
-    "anoPeriodo": "2025",
-    "codigoMateria": "HOB0308-1",
-    "nome": "alessandra heidrich",
-    "turma": "MATEMÁTICA",
-    "cargaHoraria": "90h",
-    "horario": "3M23 4M4 (10/02/2025 - 24/02/2025),  3T12 6T4 (25/02/2025 - 10/12/2025)"
-  },
-  {
-    "anoPeriodo": "2025.2",
-    "codigoMateria": "NIC0342",
-    "nome": "afonso da luz loss",
-    "materia": "LÍNGUA BRASILEIRA DE SINAIS - LIBRAS",
-    "cargaHoraria": "30h",
-    "horario": "5N12 (31/07/2025 - 04/12/2025)"
-  },
-  {
-    "anoPeriodo": "2025.2",
-    "codigoMateria": "TISB0325-3",
-    "nome": "afonso da luz loss",
-    "materia": "LIBRAS",
-    "cargaHoraria": "30h",
-    "horario": "5N56 (28/07/2025 - 06/12/2025)"
-  },
-  {
-    "anoPeriodo": "2025.2",
-    "codigoMateria": "LPB0363",
-    "nome": "airton zancanaro",
-    "materia": "PESQUISA E PROCESSOS EDUCATIVOS VIII",
-    "cargaHoraria": "30h",
-    "horario": "4N34 (28/07/2025 - 03/12/2025)"
-  },
-  {
-    "anoPeriodo": "2025.2",
-    "codigoMateria": "LPB0364",
-    "nome": "airton zancanaro",
-    "materia": "TECNOLOGIAS DA INFORMAÇÃO E COMUNICAÇÃO EM EDUCAÇÃO",
-    "cargaHoraria": "60h",
-    "horario": "6N1234 (28/07/2025 - 03/12/2025)"
-  },
-  {
-    "anoPeriodo": "2025.2",
-    "codigoMateria": "SAIAAPA",
-    "nome": "airton zancanaro",
-    "materia": "SEMINÁRIO AVANÇADO - INTELIGENCIA ARTIFICIAL APLICADA A PESQUISA ACADÊMICA",
-    "cargaHoraria": "30h",
-    "horario": "2M1234 (25/08/2025 - 25/08/2025), 2M1234 (08/09/2025 - 08/09/2025), 2M1234 (22/09/2025 - 22/09/2025), 2M1234 (06/10/2025 - 06/10/2025), 2M1234 (20/10/2025 - 20/10/2025), 2M1234 (03/11/2025 - 03/11/2025), 2M1234 (17/11/2025 - 17/11/2025), 2M1234 (01/12/2025 - 01/12/2025)"
-  },
-  {
-    "anoPeriodo": "2025.2",
-    "codigoMateria": "PGPSA0012",
     "nome": "alessandra farias millezi",
-    "materia": "LABORATÓRIO DE PRÁTICAS DE MICROBIOLOGIA",
-    "cargaHoraria": "30h",
-    "horario": "67M1234  6T1234 7T123 (12/09/2025 - 13/09/2025), 67M1234  6T1234 7T123 (17/10/2025 - 18/10/2025)"
+    "materia": "BIOLOGIA"
   },
   {
     "anoPeriodo": "2025.2",
-    "codigoMateria": "AGB0313",
+    "nome": "alessandra heidrich",
+    "materia": "MATEMÁTICA FUNDAMENTAL II"
+  },
+  {
+    "anoPeriodo": "2025",
+    "nome": "alessandra heidrich",
+    "materia": "MATEMÁTICA"
+  },
+  {
+    "anoPeriodo": "2025",
+    "nome": "alessandra heidrich",
+    "materia": "MATEMÁTICA"
+  },
+  {
+    "anoPeriodo": "2025",
+    "nome": "alessandra heidrich",
+    "materia": "MATEMÁTICA"
+  },
+  {
+    "anoPeriodo": "2025",
+    "nome": "alessandra heidrich",
+    "materia": "MATEMÁTICA"
+  },
+  {
+    "anoPeriodo": "2025",
+    "nome": "alessandra heidrich",
+    "materia": "MATEMÁTICA"
+  },
+  {
+    "anoPeriodo": "2025",
+    "nome": "alessandra heidrich",
+    "materia": "MATEMÁTICA"
+  },
+  {
+    "anoPeriodo": "2025",
+    "nome": "alessandra heidrich",
+    "materia": "MATEMÁTICA"
+  },
+  {
+    "anoPeriodo": "2025",
+    "nome": "alessandra heidrich",
+    "materia": "MATEMÁTICA"
+  },
+  {
+    "anoPeriodo": "2025",
+    "nome": "alessandra heidrich",
+    "materia": "MATEMÁTICA"
+  },
+  {
+    "anoPeriodo": "2025",
+    "nome": "alessandra heidrich",
+    "materia": "MATEMÁTICA"
+  },
+  {
+    "anoPeriodo": "2025.2",
     "nome": "allan charlles mendes de sousa",
-    "materia": "GÊNESE E CLASSIFICAÇÃO DOS SOLOS",
-    "cargaHoraria": "75h",
-    "horario": "4M45 6M123 (28/07/2025 - 05/12/2025)"
+    "materia": "GÊNESE E CLASSIFICAÇÃO DOS SOLOS"
   },
   {
     "anoPeriodo": "2025.2",
-    "codigoMateria": "AGB0329",
     "nome": "allan charlles mendes de sousa",
-    "materia": "QUÍMICA E FERTILIDADE DO SOLO",
-    "cargaHoraria": "60h",
-    "horario": "56M45 (28/07/2025 - 05/12/2025)"
+    "materia": "QUÍMICA E FERTILIDADE DO SOLO"
   },
   {
     "anoPeriodo": "2025.1",
-    "codigoMateria": "AGB0303",
     "nome": "allan charlles mendes de sousa",
-    "materia": "DESENHO TÉCNICO",
-    "cargaHoraria": "30h",
-    "horario": "4M45 (24/02/2025 - 04/07/2025)"
+    "materia": "DESENHO TÉCNICO"
   },
   {
     "anoPeriodo": "2025.1",
-    "codigoMateria": "AGB0305",
     "nome": "allan charlles mendes de sousa",
-    "materia": "INTRODUÇÃO À AGRONOMIA",
-    "cargaHoraria": "30h",
-    "horario": "6M23 (24/02/2025 - 04/07/2025)"
+    "materia": "INTRODUÇÃO À AGRONOMIA"
   },
   {
     "anoPeriodo": "2025.1",
-    "codigoMateria": "AGB0305",
     "nome": "allan charlles mendes de sousa",
-    "materia": "INTRODUÇÃO À AGRONOMIA",
-    "cargaHoraria": "30h",
-    "horario": "-"
+    "materia": "INTRODUÇÃO À AGRONOMIA"
   },
   {
     "anoPeriodo": "2025.1",
-    "codigoMateria": "AGA0352",
     "nome": "allan charlles mendes de sousa",
-    "materia": "USO, MANEJO E CONSERVAÇÃO DO SOLO",
-    "cargaHoraria": "45h",
-    "horario": "4T123 (17/02/2025 - 04/07/2025)"
+    "materia": "USO, MANEJO E CONSERVAÇÃO DO SOLO"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "APB0313-1",
     "nome": "allan charlles mendes de sousa",
-    "materia": "AGRICULTURA I",
-    "cargaHoraria": "90h",
-    "horario": "4M3 5M23 (10/02/2025 - 12/07/2025), 5M12 6M4 (13/07/2025 - 10/12/2025)"
+    "materia": "AGRICULTURA I"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "APB0313-1",
     "nome": "allan charlles mendes de sousa",
-    "materia": "AGRICULTURA I",
-    "cargaHoraria": "90h",
-    "horario": "5M5 6M45 (10/02/2025 - 12/07/2025), 4M3 6M12 (13/07/2025 - 10/12/2025)"
+    "materia": "AGRICULTURA I"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "APB0313-1",
     "nome": "allan charlles mendes de sousa",
-    "materia": "AGRICULTURA I",
-    "cargaHoraria": "90h",
-    "horario": "5M1  3T12 (10/02/2025 - 12/07/2025), 4M45 6M3 (13/07/2025 - 10/12/2025)"
+    "materia": "AGRICULTURA I"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "APB0315-1",
     "nome": "allan charlles mendes de sousa",
-    "materia": "DESENHO TÉCNICO E CONSTRUÇÕES RURAIS",
-    "cargaHoraria": "90h",
-    "horario": "5M4  6T34 (10/02/2025 - 12/07/2025), 5M1  6T12 (13/07/2025 - 10/12/2025)"
+    "materia": "DESENHO TÉCNICO E CONSTRUÇÕES RURAIS"
   },
   {
     "anoPeriodo": "2025",
-    "codigoMateria": "APB0315-1",
     "nome": "allan charlles mendes de sousa",
-    "materia": "DESENHO TÉCNICO E CONSTRUÇÕES RURAIS",
-    "cargaHoraria": "90h",
-    "horario": "4M12 6M1 (10/02/2025 - 12/07/2025), 4M12 5M3 (13/07/2025 - 10/12/2025)"
+    "materia": "DESENHO TÉCNICO E CONSTRUÇÕES RURAIS"
   }
 ]
