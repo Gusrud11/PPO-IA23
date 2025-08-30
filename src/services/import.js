@@ -39,27 +39,36 @@ async function importacao() {
    let ignorados = 0;
    let erros = 0;
 
-   for (const original of data) {
-      // Mapeia campos para o modelo Professor.
-      const registro = {
-         anoPeriodo: original.anoPeriodo ?? null,
-         nome: original.nome ?? null,
-         materia: original.materia ?? original.turma ?? null, // usa turma como fallback
-      };
-      const validationRegistro=registro.filter(
-         (item)
-      )
-      // Validação básica de campos obrigatórios (schema exige todos como String não-null).
-      const faltando = Object.entries(registro)
-         .filter(([_, v]) => v === null || v === undefined || v === "")
-         .map(([k]) => k);
+   // Agrupar dados por nome do professor
+   const professoresAgrupados = data.reduce((acc, original) => {
+      const nome = original.nome;
+      if (!acc[nome]) {
+         acc[nome] = {
+            nome,
+            anoPeriodo: original.anoPeriodo, // Use o primeiro anoPeriodo encontrado
+            subjects: new Set(), // Set para matérias únicas
+         };
+      }
+      // Adicione matéria se existir (usando fallback para turma)
+      const materia = original.materia ?? original.turma;
+      if (materia) {
+         acc[nome].subjects.add(materia);
+      }
+      return acc;
+   }, {});
 
-      if (faltando.length) {
+   // Converter para array e transformar subjects em array JSON
+   const registrosAgrupados = Object.values(professoresAgrupados).map((prof) => ({
+      nome: prof.nome,
+      anoPeriodo: prof.anoPeriodo ?? null,
+      subjects: JSON.stringify([...prof.subjects]), // Array único como string JSON
+   }));
+
+   for (const registro of registrosAgrupados) {
+      // Validação: verifique se nome e subjects não estão vazios
+      if (!registro.nome || !registro.subjects || registro.subjects === "[]") {
          ignorados++;
-         console.warn(
-            `⚠️  Registro ignorado por faltar campos obrigatórios (${faltando.join(", ")}). Dados:`,
-            original
-         );
+         console.warn(`⚠️ Registro ignorado por faltar campos obrigatórios. Dados:`, registro);
          continue;
       }
 
@@ -68,7 +77,7 @@ async function importacao() {
          sucesso++;
       } catch (err) {
          erros++;
-         console.error(`❌ Erro ao inserir ( nome=${registro.nome}): ${err.message}`);
+         console.error(`❌ Erro ao inserir (nome=${registro.nome}): ${err.message}`);
       }
    }
 
