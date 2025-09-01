@@ -96,6 +96,9 @@ const getDisciplinas = async () => {
 
       console.log(`📌 URL ${index + 1} processada. Itens coletados: ${listJSON.length}`);
     }
+   
+    
+
 
     // 4. Filtrar apenas os itens únicos
     console.log("🔎 Filtrando itens únicos...");
