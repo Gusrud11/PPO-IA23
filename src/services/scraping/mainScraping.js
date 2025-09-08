@@ -1,6 +1,8 @@
 import axios from "axios";
 import * as cheerio from "cheerio";
 import fs from "fs/promises";
+import path from "path";
+import { fileURLToPath } from "url";
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 //Quadro Docente: https://www.camboriu.ifc.edu.br/quadro-docente-2025-1/
 // URLs a serem raspadas
@@ -14,12 +16,21 @@ const urls = [
   "https://sig.ifc.edu.br/sigaa/public/docente/disciplinas.jsf?siape=3449477",//alessandra heidrich
   "https://sig.ifc.edu.br/sigaa/public/docente/disciplinas.jsf?siape=2046449",//alexandre de aguiar amaral
   "https://sig.ifc.edu.br/sigaa/public/docente/disciplinas.jsf?siape=2276418",//allan charlles mendes de sousa
+  "https://sig.ifc.edu.br/sigaa/public/docente/disciplinas.jsf?siape=1929423",//amanda moser coelho da fonseca faro
+  "https://sig.ifc.edu.br/sigaa/public/docente/disciplinas.jsf?siape=1775472",//ana cristina franzoi
+  "https://sig.ifc.edu.br/sigaa/public/docente/disciplinas.jsf?siape=1177254",//ana paula resende malheiro amaral
   
 ];
-console.log(urls.length);
+console.log("process.cwd():", process.cwd());
+console.log("import.meta.url:", import.meta.url);
+// console.log(urls.length);
 // Caminhos dos arquivos
-const ARQUIVO_DADOS = "dados.json";
-const ARQUIVO_BACKUP = "dadosBackup.json";
+const __filename=fileURLToPath(import.meta.url)
+const __dirname=path.join(__filename);
+
+const ARQUIVO_DADOS = path.join(__dirname,"../../Data/dados.json");
+const ARQUIVO_BACKUP = path.join(__dirname,"../../Data/dadosBackup.json")
+;
 
 // Função principal
 const getDisciplinas = async () => {
@@ -81,7 +92,7 @@ const getDisciplinas = async () => {
         const cargaHoraria = $(element).find("td.ch").text().trim();
         const horario = $(element).find("td.horario").text().trim();
 
-        const verificacaoCampos = codigoMateria && materia && cargaHoraria && horario && anoAtual && nome ;
+        const verificacaoCampos =  materia  && anoAtual && nome ;
         const verificacaoAno = anoAtual && anoAtual.startsWith("2025");
 
         if (verificacaoCampos && verificacaoAno) {
