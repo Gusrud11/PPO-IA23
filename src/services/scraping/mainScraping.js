@@ -87,10 +87,10 @@ const getDisciplinas = async () => {
           anoAtual = tdAno.text().trim();
           return;
         }
-        const codigoMateria = $(element).find("td.codigo").text().trim();
+        //const codigoMateria = $(element).find("td.codigo").text().trim();
         const materia = $(element).find("td:nth-child(2) a").text().trim();
-        const cargaHoraria = $(element).find("td.ch").text().trim();
-        const horario = $(element).find("td.horario").text().trim();
+        //const cargaHoraria = $(element).find("td.ch").text().trim();
+        //const horario = $(element).find("td.horario").text().trim();
 
         const verificacaoCampos =  materia  && anoAtual && nome ;
         const verificacaoAno = anoAtual && anoAtual.startsWith("2025");
@@ -114,14 +114,31 @@ const getDisciplinas = async () => {
     // 4. Filtrar apenas os itens únicos
     console.log("🔎 Filtrando itens únicos...");
 
-    const uniqueData = listJSON.filter(
-      (item) =>
-        !existingData.some(
-          (existingItem) =>
-            existingItem.codigoMateria === item.codigoMateria &&
-            existingItem.anoPeriodo === item.anoPeriodo
-        )
-    );
+    // Normaliza strings para comparação consistente (remove acentos, espaços extras e diferenciação de maiúsculas/minúsculas)
+    const normalize = (s) =>
+      (s ?? "")
+        .toString()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .trim()
+        .toLowerCase()
+        .replace(/\s+/g, " ");
+
+    // Cria uma chave única baseada nos campos existentes
+    const makeKey = (item) =>
+      `${normalize(item.nome)}|${normalize(item.materia)}|${normalize(item.anoPeriodo)}`;
+
+    // Conjunto de chaves já presentes nos dados antigos
+    const existingKeys = new Set(existingData.map((it) => makeKey(it)));
+    // Conjunto para evitar duplicados dentro do próprio lote raspado
+    const seenNewKeys = new Set();
+
+    const uniqueData = listJSON.filter((item) => {
+      const key = makeKey(item);
+      if (existingKeys.has(key) || seenNewKeys.has(key)) return false;
+      seenNewKeys.add(key);
+      return true;
+    });
 
     console.log(`➕ Adicionando ${uniqueData.length} novos itens únicos.`);
 

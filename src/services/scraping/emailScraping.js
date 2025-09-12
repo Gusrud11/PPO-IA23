@@ -14,6 +14,8 @@ const getEmail=async()=>{
         let existingData=[]
         dataEmail=fs.readFile()
     }
+
+    
     catch(err){
 
     }
