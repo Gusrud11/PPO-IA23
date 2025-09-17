@@ -60,7 +60,7 @@ const getDisciplinas = async () => {
       console.log("✅ Backup realizado com sucesso.");
 
     }catch(err){
-      throw new Error('Erro ao realizar backup: ${err.message}')
+      throw new Error(`Erro ao realizar backup: ${err.message}`)
     }
 
     // 3. Coletar novos dados nas URLs
@@ -76,6 +76,7 @@ const getDisciplinas = async () => {
 
       let anoAtual = null;
       let nome=null
+      let codigo=null
       $("#corpo #center #id-docente").each((index, element) => {
         nome = $(element).find("h3").text().trim();
       });
@@ -93,15 +94,18 @@ const getDisciplinas = async () => {
         //const horario = $(element).find("td.horario").text().trim();
 
         const verificacaoCampos =  materia  && anoAtual && nome ;
-        const verificacaoAno = anoAtual && anoAtual.startsWith("2025");
-
-        if (verificacaoCampos && verificacaoAno) {
-          listJSON.push({
-            anoPeriodo: anoAtual,
-            nome,
-            materia,
-           
-          });
+        const verificacaoAno = anoAtual && anoAtual.startsWith("2025");        
+      
+          if (verificacaoCampos && verificacaoAno) {
+            codigo++;
+            listJSON.push({
+              codigo,
+              anoPeriodo: anoAtual,
+              nome,
+              materia,
+             
+            });
+        
         }
       });
 
